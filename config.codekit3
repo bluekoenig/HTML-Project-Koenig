@@ -29,6 +29,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/header\/Logo 1.png" : {
+      "ft" : 32768,
+      "iS" : 1469,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/Logo 1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
