@@ -358,10 +358,6 @@ template {
 /* =============
     Buttons
 ============= */
-button {
-  border: none;
-}
-
 /* =============
     Forms
 ============= */
@@ -386,11 +382,6 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  color: red;
-  font-size: 0.75rem;
-}
-
 /* =============
     Footer
 ============= */
