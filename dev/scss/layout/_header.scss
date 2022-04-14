@@ -1,3 +1,18 @@
 /* =============
     Header
 ============= */
+img{
+    width: 100%
+    }
+div{
+        grid-area: grid-content;
+    }
+header{
+
+    border: 1px solid rgb(255, 0, 0);
+display: grid;
+grid-template-columns: 16px auto 16px;
+grid-template-areas: ". grid-content .";
+
+}
+

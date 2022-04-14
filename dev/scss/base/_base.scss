@@ -3,3 +3,14 @@
 ============= */
 
 
+
+.css-grid{
+    
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". content .";
+    
+    >div{
+        grid-area: content;
+    }  
+}
