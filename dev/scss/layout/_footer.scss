@@ -1,3 +1,19 @@
 /* =============
     Footer
 ============= */
+footer{
+
+    >div{
+        #locicon{
+            ul{
+                li{
+                    section{
+                        display: grid;
+                        grid-template-columns: 20% auto;
+
+                    }
+                }
+            }
+        }
+    }
+}

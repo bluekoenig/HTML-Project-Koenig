@@ -6,8 +6,11 @@
     
         display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". global-grid .";
+        grid-template-areas: ". big-grid .";
         
+        >div{
+            grid-area: big-grid;
+        }
     }
 
 
