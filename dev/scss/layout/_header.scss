@@ -15,14 +15,13 @@ grid-template-areas: ". grid-content .";
 }
 
 .logo {
-    display: grid;
+    grid-template-columns: 75% auto;
     width: 322px;
     height: 77px;
   }
   
   
   .headline {
-    width: 400px;
-    height: 77px;
+    grid-template-columns: 75% auto;
     color: #39B6FD;
   }

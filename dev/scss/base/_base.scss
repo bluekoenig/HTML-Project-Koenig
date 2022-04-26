@@ -14,3 +14,13 @@
     }
 
 
+.best-friends{
+    display: grid;
+    grid-template-columns: 16px 50% 50% 16px;
+    grid-template-areas: ". work .";
+
+    >div{
+        grid-area: work;
+    }
+
+}

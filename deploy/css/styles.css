@@ -361,6 +361,15 @@ template {
   grid-area: big-grid;
 }
 
+.best-friends {
+  display: grid;
+  grid-template-columns: 16px 50% 50% 16px;
+  grid-template-areas: ". work .";
+}
+.best-friends > div {
+  grid-area: work;
+}
+
 /* =============
     Typography
 ============= */
@@ -408,14 +417,13 @@ header img {
 }
 
 .logo {
-  display: grid;
+  grid-template-columns: 75% auto;
   width: 322px;
   height: 77px;
 }
 
 .headline {
-  width: 400px;
-  height: 77px;
+  grid-template-columns: 75% auto;
   color: #39B6FD;
 }
 
