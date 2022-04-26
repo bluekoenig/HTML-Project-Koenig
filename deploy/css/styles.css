@@ -370,6 +370,15 @@ template {
   grid-area: work;
 }
 
+.search-grid {
+  display: grid;
+  grid-template-columns: 16px 100% 16px;
+  grid-template-areas: ". please .";
+}
+.search-grid > div {
+  grid-area: please;
+}
+
 /* =============
     Typography
 ============= */
@@ -452,6 +461,10 @@ footer > div #locicon ul li section {
 }
 
 .gallery ul li img {
+  width: 50%;
+}
+
+#bigpic img {
   width: 100%;
 }
 

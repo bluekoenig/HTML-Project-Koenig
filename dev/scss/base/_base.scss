@@ -24,3 +24,13 @@
     }
 
 }
+
+.search-grid{
+    display: grid;
+    grid-template-columns: 16px 100% 16px;
+    grid-template-areas: ". please .";
+
+    >div{
+        grid-area: please;
+    }
+}
