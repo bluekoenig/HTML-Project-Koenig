@@ -460,12 +460,19 @@ footer > div #locicon ul li section {
   width: 100%;
 }
 
-.gallery ul li img {
+.gallery img {
   width: 50%;
 }
 
 #bigpic img {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .css-grid-gallery {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
 
 #hero #hero-please-work {
