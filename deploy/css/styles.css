@@ -361,15 +361,6 @@ template {
   grid-area: big-grid;
 }
 
-.best-friends {
-  display: grid;
-  grid-template-columns: 16px 50% 50% 16px;
-  grid-template-areas: ". work .";
-}
-.best-friends > div {
-  grid-area: work;
-}
-
 .search-grid {
   display: grid;
   grid-template-columns: 16px 100% 16px;
@@ -444,10 +435,6 @@ footer > div #locicon ul li section {
   grid-template-columns: 20% auto;
 }
 
-.articles ul li img {
-  width: 110%;
-}
-
 #art-img {
   width: 100%;
 }
@@ -477,4 +464,9 @@ footer > div #locicon ul li section {
 
 #hero #hero-please-work {
   width: 100%;
+}
+
+#best-friends-container {
+  display: grid;
+  grid-template-columns: 50% auto;
 }

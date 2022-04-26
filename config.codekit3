@@ -182,6 +182,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/icons\/image 2.png" : {
+      "ft" : 32768,
+      "iS" : 127551,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/icons\/image 2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/icons\/inta.png" : {
       "ft" : 32768,
       "iS" : 503,
