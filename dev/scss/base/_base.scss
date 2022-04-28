@@ -35,3 +35,23 @@
         grid-area: please;
     }
 }
+
+.desktop-only{
+
+    display: none;
+    
+    @include lg{
+        display: block;
+    }
+}
+
+.tablet-only{
+
+    display: none;
+    
+    @include md{
+        display: block;
+        grid-template-columns: 75% auto;
+        color: #39B6FD;
+    }
+}
