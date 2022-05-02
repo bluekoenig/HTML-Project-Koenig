@@ -7,11 +7,50 @@ width: 100%;
 
 #best-friends-container{
 
-
-    @include md{
-
+    @include xl{
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". bfc .";
     }
 
+    >div{
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+        @include xl{
+            grid-area: bfc;
+        }
+
+        .best-friends-content {
+            padding: 16px;
+        }
+
+    }
+}
+
+#callouts{
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". callouts .";
+    }
+
+    >div{
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 16px
+        }
+        @include xl{
+            grid-area: callouts;
+        }
+
+        >section{
+            border: 1px solid red;
+        }
+    }
 }

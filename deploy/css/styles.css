@@ -352,6 +352,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .css-grid {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -382,7 +390,7 @@ template {
 .tablet-up {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .tablet-up {
     display: block;
   }
@@ -472,6 +480,41 @@ footer > div #locicon ul li section {
   grid-template-columns: 20% auto;
 }
 
+#article-title ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #article-title ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
+  }
+}
+@media (min-width: 768px) {
+  #article-title ul #c1 {
+    grid-area: c1;
+  }
+}
+@media (min-width: 768px) {
+  #article-title ul #c2 {
+    grid-area: c2;
+  }
+}
+@media (min-width: 768px) {
+  #article-title ul #c3 {
+    grid-area: c3;
+  }
+}
+@media (min-width: 768px) {
+  #article-title ul #c4 {
+    grid-area: c4;
+  }
+}
+@media (min-width: 768px) {
+  #article-title ul #c5 {
+    grid-area: c5;
+  }
+}
 #art-img {
   width: 100%;
 }
@@ -503,9 +546,47 @@ footer > div #locicon ul li section {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #best-friends-container {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". bfc .";
+  }
+}
+@media (min-width: 768px) {
+  #best-friends-container > div {
     display: grid;
     grid-template-columns: 50% auto;
   }
+}
+@media (min-width: 1200px) {
+  #best-friends-container > div {
+    grid-area: bfc;
+  }
+}
+#best-friends-container > div .best-friends-content {
+  padding: 16px;
+}
+
+@media (min-width: 1200px) {
+  #callouts {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". callouts .";
+  }
+}
+@media (min-width: 768px) {
+  #callouts > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #callouts > div {
+    grid-area: callouts;
+  }
+}
+#callouts > div > section {
+  border: 1px solid red;
 }

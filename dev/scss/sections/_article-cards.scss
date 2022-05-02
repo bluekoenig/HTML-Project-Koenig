@@ -1,15 +1,56 @@
-.article-cards{
-    ul{
+#article-title{
+    ul {
 
-        li{
+        display: grid;
+        gap: 16px;
 
-            img{
-            // width: 110%;
+        @include md {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "c1 c1 c2 c2"
+                "c3 c3 c4 c4"
+                ". c5 c5 .";
+        }
+
+        #c1 {
+            @include md {
+                grid-area: c1;
+            }
+        }
+
+        #c2 {
+            @include md {
+                grid-area: c2;
+            }
+        }
+
+        #c3 {
+            @include md {
+                grid-area: c3;
+            }
+        }
+
+        #c4 {
+            @include md {
+                grid-area: c4;
+            }
+        }
+
+        #c5 {
+            @include md {
+                grid-area: c5;
+            }
+        }
+
+        li {
+
+            img {
+                // width: 110%;
             }
         }
     }
 }
 
-#art-img{
- width: 100%;
+#art-img {
+    width: 100%;
 }
