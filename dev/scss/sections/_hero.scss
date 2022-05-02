@@ -6,6 +6,12 @@ width: 100%;
 }
 
 #best-friends-container{
-    display: grid;
-    grid-template-columns: 50% auto;
+
+
+    @include md{
+
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+
 }

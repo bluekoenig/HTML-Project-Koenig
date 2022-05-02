@@ -36,7 +36,7 @@
     }
 }
 
-.desktop-only{
+.desktop-up{
 
     display: none;
     
@@ -45,13 +45,19 @@
     }
 }
 
-.tablet-only{
-
+.tablet-up{
     display: none;
     
-    @include md{
+    @include lg{
         display: block;
-        grid-template-columns: 75% auto;
-        color: #39B6FD;
+    }
+   
+}
+
+.spacing{
+    margin-top: 32px;
+
+    @include md{
+        margin-top: 64px;
     }
 }

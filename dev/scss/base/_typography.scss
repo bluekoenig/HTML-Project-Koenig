@@ -2,8 +2,23 @@
     Typography
 ============= */
 body {
-    font-family: "helvetica";
+    font-family: "nunito", sans-serif;
     background: #ffffff;
     color: rgb(5, 134, 173);
     text-align: left;
+  }
+
+  h1{
+    
+@include sm{
+    display: none;
+}
+
+      @include md{
+          display: block;
+          grid-template-columns: 75% auto;
+          font-family: "open sans", sans-serif;
+          font-size: rem-clac(36);
+          color: rgb(6, 82, 153);
+      }
   }

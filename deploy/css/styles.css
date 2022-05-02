@@ -370,23 +370,30 @@ template {
   grid-area: please;
 }
 
-.desktop-only {
+.desktop-up {
   display: none;
 }
 @media (min-width: 1024px) {
-  .desktop-only {
+  .desktop-up {
     display: block;
   }
 }
 
-.tablet-only {
+.tablet-up {
   display: none;
 }
-@media (min-width: 768px) {
-  .tablet-only {
+@media (min-width: 1024px) {
+  .tablet-up {
     display: block;
-    grid-template-columns: 75% auto;
-    color: #39B6FD;
+  }
+}
+
+.spacing {
+  margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .spacing {
+    margin-top: 64px;
   }
 }
 
@@ -394,10 +401,25 @@ template {
     Typography
 ============= */
 body {
-  font-family: "helvetica";
+  font-family: "nunito", sans-serif;
   background: #ffffff;
   color: #0586ad;
   text-align: left;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    display: block;
+    grid-template-columns: 75% auto;
+    font-family: "open sans", sans-serif;
+    font-size: rem-clac(36);
+    color: #065299;
+  }
 }
 
 /* =============
@@ -481,7 +503,9 @@ footer > div #locicon ul li section {
   width: 100%;
 }
 
-#best-friends-container {
-  display: grid;
-  grid-template-columns: 50% auto;
+@media (min-width: 768px) {
+  #best-friends-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
