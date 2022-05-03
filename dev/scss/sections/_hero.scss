@@ -5,6 +5,21 @@ width: 100%;
 
 }
 
+.right-bleed{
+    background-color: #39B6FD; 
+    color: black;
+}
+
+.left-bleed{
+    background-color: #8FD7FF; 
+    color: black;
+}
+
+.green-bleed{
+    background-color: #B4F1E2; 
+    color: black;
+}
+
 #best-friends-container{
 
     @include xl{
