@@ -382,11 +382,13 @@ ul li {
   width: 85%;
   padding: 20px 20px 20px 20px;
   margin: 20px 20px 20px 20px;
+  box-sizing: border-box;
 }
 #search > div > section > button {
   padding: 20px 20px 20px 20px;
   margin: 20px 20px 20px 0px;
   background-color: #39B6FD;
+  box-sizing: border-box;
 }
 
 .desktop-up {
@@ -419,10 +421,6 @@ ul li {
   }
 }
 
-.gallery-pad {
-  margin-top: 50px;
-}
-
 /* =============
     Typography
 ============= */
@@ -446,12 +444,6 @@ body {
     font-size: rem-clac(36);
     color: #065299;
   }
-}
-
-.bold-font > section {
-  font-family: "nunito", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
 }
 
 /* =============
@@ -543,6 +535,14 @@ footer > div #contact ul li section {
 
 #article-title {
   margin-top: 44px;
+}
+
+.article-cards {
+  padding: 0px 16px 16px 16px;
+}
+
+.dgreen {
+  color: #1B9678;
 }
 
 @media (min-width: 768px) {
@@ -668,10 +668,22 @@ footer > div #contact ul li section {
 
 .callout-pad-left {
   margin: 16px 0px 16px 16px;
+  padding: 0px 16px 0px 16px;
+}
+@media (min-width: 768px) {
+  .callout-pad-left {
+    margin: 24px 0px 24px 24px;
+  }
 }
 
 .callout-pad-right {
   margin: 16px 16px 16px 0px;
+  padding: 0px 16px 0px 16px;
+}
+@media (min-width: 768px) {
+  .callout-pad-right {
+    margin: 24px 0px 24px 24px;
+  }
 }
 
 @media (min-width: 1200px) {

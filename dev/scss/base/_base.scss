@@ -51,11 +51,13 @@ ul{
                 width: 85%;
                 padding: 20px 20px 20px 20px;
                 margin: 20px 20px 20px 20px;
+                box-sizing: border-box;
             }
             >button{
                 padding: 20px 20px 20px 20px;
                 margin: 20px 20px 20px 0px;
                 background-color: #39B6FD;
+                box-sizing: border-box;
             }
            
         }
@@ -93,9 +95,5 @@ ul{
     }
 }
 
-.gallery-pad{
-   margin-top: 50px;
-        }
-        
     
    

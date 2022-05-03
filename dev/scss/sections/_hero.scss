@@ -37,10 +37,19 @@ width: 100%;
 
 .callout-pad-left{
     margin: 16px 0px 16px 16px;
+    padding: 0px 16px 0px 16px;
+
+    @include md{
+        margin: 24px 0px 24px 24px;
+    }
 }
 
 .callout-pad-right{
     margin: 16px 16px 16px 0px;
+    padding: 0px 16px 0px 16px;
+    @include md{
+        margin: 24px 0px 24px 24px;
+    }
 }
 
 #best-friends-container{

@@ -2,6 +2,13 @@
     margin-top: 44px;
 }
 
+.article-cards{
+    padding: 0px 16px 16px 16px;
+}
+
+.dgreen{
+    color: #1B9678;
+}
 
 #article-layout {
     >div{
@@ -21,6 +28,7 @@
 
         display: grid;
         gap: 16px;
+       
 
         @include md {
             grid-area: ac;
