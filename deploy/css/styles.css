@@ -582,9 +582,6 @@ footer > div #contact ul li section {
   display: grid;
   grid-template-columns: 75% auto;
 }
-.callout-things > div aside img {
-  width: 100%;
-}
 
 .gallery img {
   width: 50%;
@@ -663,6 +660,18 @@ footer > div #contact ul li section {
 }
 @media (min-width: 1200px) {
   #callouts > div {
+    grid-area: callouts;
+  }
+}
+@media (min-width: 768px) {
+  #callouts > aside {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #callouts > aside {
     grid-area: callouts;
   }
 }
