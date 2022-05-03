@@ -1,10 +1,24 @@
-#article-title{
+#article-layout {
+    >div{
+@include md{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". ac .";
+}
+
+@include xl{
+    grid-template-columns: auto 1440px auto;
+}
+
+    }
+    
     ul {
 
         display: grid;
         gap: 16px;
 
         @include md {
+            grid-area: ac;
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas:
                 "c1 c1 c2 c2"
@@ -42,11 +56,21 @@
             }
         }
 
-        li {
+        @include lg {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+                "c1 c1 c2 c2 c3 c3"
+                ". c4 c4 c5 c5 .";
 
-            img {
-                // width: 110%;
-            }
+
+        }
+
+        @include xl {
+            display: grid;
+            grid-template-columns: auto 1440px auto;
+            grid-template-areas: ". ac .";
+
+            li {}
         }
     }
 }

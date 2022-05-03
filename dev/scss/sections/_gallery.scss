@@ -1,21 +1,33 @@
-.gallery{
-            img{
-                width: 50%;
-            }
-    
+.gallery {
+    img {
+        width: 50%;
+    }
+
 }
 
-#bigpic{
-    img{ 
+#bigpic {
+    img {
         width: 100%;
     }
 }
 
-.css-grid-gallery{
+.css-grid-gallery {
 
 
-@include md{
     display: grid;
     grid-template-columns: 50% auto;
 }
+
+#little-gallery {
+
+    @include md {
+
+        >div {
+            >ul {
+                display: grid;
+                grid-template-columns: 50% auto;
+            }
+        }
+
+    }
 }
