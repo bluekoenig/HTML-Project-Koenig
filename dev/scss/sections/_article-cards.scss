@@ -1,7 +1,12 @@
 #article-title{
     margin-top: 44px;
-    font-size: rem-calc(24);
+    font-size: rem-calc(16);
     font-weight: 600;
+
+    @include md{
+        font-size: rem-calc(24);
+    font-weight: 600;
+    }
 }
 
 .article-cards{

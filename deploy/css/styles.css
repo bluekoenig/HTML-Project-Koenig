@@ -379,14 +379,13 @@ ul li {
 }
 
 #search > div > section > input {
-  width: 85%;
-  padding: 20px 20px 20px 20px;
-  margin: 20px 20px 20px 20px;
+  width: 80%;
+  padding: 16px 16px 16px 16px;
   box-sizing: border-box;
 }
 #search > div > section > button {
-  padding: 20px 20px 20px 20px;
-  margin: 20px 20px 20px 0px;
+  padding: 16px 16px 16px 16px;
+  margin: 16px 16px 16px 16px;
   background-color: #39B6FD;
   box-sizing: border-box;
 }
@@ -541,8 +540,14 @@ footer > div #contact ul li section {
 
 #article-title {
   margin-top: 44px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  #article-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }
 
 .article-cards {
@@ -653,20 +658,42 @@ footer > div #contact ul li section {
   background-color: #8FD7FF;
   color: black;
 }
+@media (min-width: 768px) {
+  .light-bleed {
+    font-size: 1.25rem;
+  }
+}
 
 .green-bleed {
   background-color: #B4F1E2;
   color: black;
 }
+@media (min-width: 768px) {
+  .green-bleed {
+    font-size: 1.25rem;
+  }
+}
 
 .bold-font > section {
-  font-size: 1.5rem;
+  font-size: 0.875rem;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .bold-font > section {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }
 
 .semi-bold > div > section {
-  font-size: 1.5rem;
+  font-size: 0.875rem;
   font-weight: 300;
+}
+@media (min-width: 768px) {
+  .semi-bold > div > section {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
 }
 
 .callout-pad-left {
