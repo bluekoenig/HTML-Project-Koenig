@@ -378,6 +378,17 @@ ul li {
   grid-area: please;
 }
 
+#search > div > section > input {
+  width: 85%;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+}
+#search > div > section > button {
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 0px;
+  background-color: #39B6FD;
+}
+
 .desktop-up {
   display: none;
 }
@@ -393,6 +404,9 @@ ul li {
 @media (min-width: 768px) {
   .tablet-up {
     display: block;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
   }
 }
 
