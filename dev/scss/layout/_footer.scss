@@ -29,6 +29,12 @@ footer{
         #contact{
             @include md{
                 grid-area: contact;
+                font-size: rem-calc(20);
+            }
+            >h3{
+                .headline{
+                    font-size: rem-calc(20);
+                }
             }
             ul{
                 li{
@@ -43,12 +49,14 @@ footer{
         #newsletter{
             @include md{
                 grid-area: newsletter;
+                font-size: rem-calc(20);
             }
 
         }
         #follow{
             @include md{
                 grid-area: follow;
+                font-size: rem-calc(20);
             }
         }
     }

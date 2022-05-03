@@ -516,7 +516,11 @@ footer > div {
 @media (min-width: 768px) {
   footer > div #contact {
     grid-area: contact;
+    font-size: 1.25rem;
   }
+}
+footer > div #contact > h3 .headline {
+  font-size: 1.25rem;
 }
 footer > div #contact ul li section {
   display: grid;
@@ -525,30 +529,29 @@ footer > div #contact ul li section {
 @media (min-width: 768px) {
   footer > div #newsletter {
     grid-area: newsletter;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 768px) {
   footer > div #follow {
     grid-area: follow;
+    font-size: 1.25rem;
   }
 }
 
 #article-title {
   margin-top: 44px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .article-cards {
   padding: 0px 16px 16px 16px;
 }
 
-.dgreen {
-  color: #1B9678;
-}
-
 @media (min-width: 768px) {
   #article-layout > div {
     display: grid;
-    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". ac .";
   }
 }
@@ -661,18 +664,18 @@ footer > div #contact ul li section {
   font-weight: 600;
 }
 
-.semi-bold > section {
+.semi-bold > div > section {
   font-size: 1.5rem;
   font-weight: 300;
 }
 
 .callout-pad-left {
-  margin: 16px 0px 16px 16px;
+  margin: 16px 0px 16px 0px;
   padding: 0px 16px 0px 16px;
 }
 @media (min-width: 768px) {
   .callout-pad-left {
-    margin: 24px 0px 24px 24px;
+    margin: 24px 0px 24px 0px;
   }
 }
 
@@ -682,7 +685,7 @@ footer > div #contact ul li section {
 }
 @media (min-width: 768px) {
   .callout-pad-right {
-    margin: 24px 0px 24px 24px;
+    margin: 24px 0px 24px 0px;
   }
 }
 

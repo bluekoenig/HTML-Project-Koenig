@@ -1,20 +1,22 @@
 #article-title{
     margin-top: 44px;
+    font-size: rem-calc(24);
+    font-weight: 600;
 }
 
 .article-cards{
     padding: 0px 16px 16px 16px;
 }
 
-.dgreen{
-    color: #1B9678;
-}
+
+   
+
 
 #article-layout {
     >div{
 @include md{
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    // grid-template-columns: 16px auto 16px;
     grid-template-areas: ". ac .";
 }
 

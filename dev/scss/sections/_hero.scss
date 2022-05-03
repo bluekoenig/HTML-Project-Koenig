@@ -29,18 +29,21 @@ width: 100%;
 }
 
 .semi-bold{
-    >section{
-        font-size: rem-calc(24);
-        font-weight: 300;
+    >div{
+        >section{
+            font-size: rem-calc(24);
+            font-weight: 300;
+        }
     }
+    
 }
 
 .callout-pad-left{
-    margin: 16px 0px 16px 16px;
+    margin: 16px 0px 16px 0px;
     padding: 0px 16px 0px 16px;
 
     @include md{
-        margin: 24px 0px 24px 24px;
+        margin: 24px 0px 24px 0px;
     }
 }
 
@@ -48,7 +51,7 @@ width: 100%;
     margin: 16px 16px 16px 0px;
     padding: 0px 16px 0px 16px;
     @include md{
-        margin: 24px 0px 24px 24px;
+        margin: 24px 0px 24px 0px;
     }
 }
 
