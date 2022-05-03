@@ -444,6 +444,12 @@ body {
   }
 }
 
+.bold-font > section {
+  font-family: "nunito", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 /* =============
     Buttons
 ============= */
@@ -640,11 +646,22 @@ footer > div #contact ul li section {
   color: black;
 }
 
+.bold-font > section {
+  font-family: "nunito", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 @media (min-width: 1200px) {
   #best-friends-container {
     display: grid;
     grid-template-columns: auto 1440px auto;
     grid-template-areas: ". bfc .";
+  }
+}
+@media (min-width: 576px) {
+  #best-friends-container > div {
+    grid-template-areas: "quote button";
   }
 }
 @media (min-width: 768px) {
@@ -659,7 +676,14 @@ footer > div #contact ul li section {
   }
 }
 #best-friends-container > div .best-friends-content {
+  grid-template-columns: 75% auto;
   padding: 16px;
+}
+#best-friends-container > div .quote {
+  grid-area: quote;
+}
+#best-friends-container > div .button {
+  grid-area: button;
 }
 
 @media (min-width: 1200px) {

@@ -20,6 +20,15 @@ width: 100%;
     color: black;
 }
 
+.bold-font{
+    >section{
+        font-family: "nunito", sans-serif;
+        font-size: rem-calc(24);
+        font-weight: 400;
+    }
+  
+}
+
 #best-friends-container{
 
     @include xl{
@@ -29,6 +38,9 @@ width: 100%;
     }
 
     >div{
+        @include sm{
+            grid-template-areas: "quote button";
+        }
 
         @include md{
             display: grid;
@@ -40,7 +52,15 @@ width: 100%;
         }
 
         .best-friends-content {
+            grid-template-columns: 75% auto;
             padding: 16px;
+        }
+        .quote{
+            grid-area: quote;
+        }
+
+        .button{
+            grid-area: button;
         }
 
     }
