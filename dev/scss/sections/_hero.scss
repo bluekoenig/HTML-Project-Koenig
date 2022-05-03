@@ -29,6 +29,14 @@ width: 100%;
   
 }
 
+.callout-pad-left{
+    margin: 16px 0px 16px 16px;
+}
+
+.callout-pad-right{
+    margin: 16px 16px 16px 0px;
+}
+
 #best-friends-container{
 
     @include xl{
@@ -67,6 +75,7 @@ width: 100%;
 }
 
 #callouts{
+
     @include xl{
         display: grid;
         grid-template-columns: auto 1440px auto;
