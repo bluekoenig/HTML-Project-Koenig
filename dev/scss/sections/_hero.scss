@@ -22,11 +22,17 @@ width: 100%;
 
 .bold-font{
     >section{
-        font-family: "nunito", sans-serif;
         font-size: rem-calc(24);
-        font-weight: 400;
+        font-weight: 600;
     }
   
+}
+
+.semi-bold{
+    >section{
+        font-size: rem-calc(24);
+        font-weight: 300;
+    }
 }
 
 .callout-pad-left{

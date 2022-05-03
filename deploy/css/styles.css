@@ -501,6 +501,7 @@ header img {
     Footer
 ============= */
 footer {
+  margin-top: 56px;
   background-color: #1B9678;
   color: white;
 }
@@ -538,6 +539,10 @@ footer > div #contact ul li section {
   footer > div #follow {
     grid-area: follow;
   }
+}
+
+#article-title {
+  margin-top: 44px;
 }
 
 @media (min-width: 768px) {
@@ -652,9 +657,13 @@ footer > div #contact ul li section {
 }
 
 .bold-font > section {
-  font-family: "nunito", sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.semi-bold > section {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .callout-pad-left {
