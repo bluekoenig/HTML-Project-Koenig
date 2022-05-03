@@ -475,9 +475,40 @@ header img {
 /* =============
     Footer
 ============= */
-footer > div #locicon ul li section {
+footer > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  footer > div {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "contact newsletter" ". follow";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "contact newsletter follow";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #contact {
+    grid-area: contact;
+  }
+}
+footer > div #contact ul li section {
   display: grid;
   grid-template-columns: 20% auto;
+}
+@media (min-width: 768px) {
+  footer > div #newsletter {
+    grid-area: newsletter;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #follow {
+    grid-area: follow;
+  }
 }
 
 @media (min-width: 768px) {

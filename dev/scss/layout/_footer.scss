@@ -4,7 +4,27 @@
 footer{
 
     >div{
-        #locicon{
+
+        display: grid;
+        gap: 16px;
+
+        @include md{
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "contact newsletter"
+            ". follow";
+        }
+
+        @include lg{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "contact newsletter follow";
+        }
+
+        #contact{
+            @include md{
+                grid-area: contact;
+            }
             ul{
                 li{
                     section{
@@ -13,6 +33,17 @@ footer{
 
                     }
                 }
+            }
+        }
+        #newsletter{
+            @include md{
+                grid-area: newsletter;
+            }
+
+        }
+        #follow{
+            @include md{
+                grid-area: follow;
             }
         }
     }
