@@ -62,10 +62,20 @@
 
 #best-friends-container {
 
-    @include xl {
-        display: grid;
-        grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". bfc .";
+    @include xxl {
+
+        .under-left{
+            display: grid;
+            grid-template-columns: 16px 485px auto;
+            grid-template-areas: ". bfc .";
+        }
+
+        .under-right{
+            display: grid;
+            grid-template-columns: auto 485px 16px;
+            grid-template-areas: ". bfc .";
+        }
+        
     }
 
     >div {
@@ -78,7 +88,7 @@
             grid-template-columns: 50% auto;
         }
 
-        @include xl {
+        @include xxl {
             grid-area: bfc;
         }
 
@@ -112,7 +122,7 @@
 
 #callouts {
 
-    @include xl {
+    @include xxl {
         display: grid;
         grid-template-columns: auto 1440px auto;
         grid-template-areas: ". callouts .";
@@ -126,7 +136,7 @@
             gap: 16px
         }
 
-        @include xl {
+        @include xxl {
             grid-area: callouts;
         }
 
@@ -140,7 +150,7 @@
             gap: 16px
         }
 
-        @include xl {
+        @include xxl {
             grid-area: callouts;
         }
     }

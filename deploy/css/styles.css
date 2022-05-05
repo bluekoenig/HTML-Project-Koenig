@@ -10,6 +10,15 @@ html {
 /* =============
     Variables
 ============= */
+:root {
+  --teal: #B4F1E2;
+  --dark-teal: #1B9678;
+  --blue: #8FD7FF;
+  --dark-blue: #39B6FD;
+  --black: #;
+  --white: #;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -365,7 +374,7 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". big-grid .";
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .css-grid {
     grid-template-columns: auto 1440px auto;
   }
@@ -384,7 +393,7 @@ ul li {
 }
 
 #search > div > section > input {
-  width: 90%;
+  width: 85%;
   padding: 16px 16px 16px 16px;
   box-sizing: border-box;
 }
@@ -506,7 +515,8 @@ textarea {
     Header
 ============= */
 header {
-  padding-top: 26px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: #B4F1E2;
 }
 header img {
@@ -713,10 +723,15 @@ footer > div #contact ul li section {
   }
 }
 
-@media (min-width: 1200px) {
-  #best-friends-container {
+@media (min-width: 1440px) {
+  #best-friends-container .under-left {
     display: grid;
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: 16px 485px auto;
+    grid-template-areas: ". bfc .";
+  }
+  #best-friends-container .under-right {
+    display: grid;
+    grid-template-columns: auto 485px 16px;
     grid-template-areas: ". bfc .";
   }
 }
@@ -731,7 +746,7 @@ footer > div #contact ul li section {
     grid-template-columns: 50% auto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #best-friends-container > div {
     grid-area: bfc;
   }
@@ -755,7 +770,7 @@ footer > div #contact ul li section {
   grid-area: button;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #callouts {
     display: grid;
     grid-template-columns: auto 1440px auto;
@@ -769,7 +784,7 @@ footer > div #contact ul li section {
     gap: 16px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #callouts > div {
     grid-area: callouts;
   }
@@ -781,7 +796,7 @@ footer > div #contact ul li section {
     gap: 16px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #callouts > aside {
     grid-area: callouts;
   }

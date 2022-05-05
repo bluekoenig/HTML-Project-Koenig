@@ -16,7 +16,7 @@ ul{
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". big-grid .";
 
-        @include xl {
+        @include xxl {
             grid-template-columns: auto 1440px auto;
         }
         
@@ -52,7 +52,7 @@ ul{
     >div{
         >section{
             >input{
-                width: 90%;
+                width: 85%;
                 padding: 16px 16px 16px 16px;
                 // margin: 20px 20px 20px 20px;
                 box-sizing: border-box;
