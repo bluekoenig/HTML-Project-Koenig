@@ -24,3 +24,33 @@ h1 {
         color: rgb(6, 82, 153);
     }
 }
+
+h6 {
+    padding: 0px;
+    margin: 16px 0px 16px 0px;
+}
+
+.bold-font {
+    // >section{
+    font-size: rem-calc(14);
+    font-weight: 600;
+
+    @include md {
+        font-size: rem-calc(24);
+        font-weight: 600;
+    }
+
+    // }
+
+}
+
+.semi-bold {
+
+    font-size: rem-calc(14);
+    font-weight: 300;
+
+    @include md {
+        font-size: rem-calc(24);
+        font-weight: 300;
+    }
+}

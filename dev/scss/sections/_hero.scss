@@ -40,30 +40,7 @@
     }
 }
 
-.bold-font {
-    // >section{
-    font-size: rem-calc(14);
-    font-weight: 600;
 
-    @include md {
-        font-size: rem-calc(24);
-        font-weight: 600;
-    }
-
-    // }
-
-}
-
-.semi-bold {
-
-    font-size: rem-calc(14);
-    font-weight: 300;
-
-    @include md {
-        font-size: rem-calc(24);
-        font-weight: 300;
-    }
-}
 
 .callout-pad-left {
     margin: 16px 0px 16px 0px;
@@ -108,7 +85,19 @@
         .best-friends-content {
             grid-template-columns: 75% auto;
             padding: 16px;
+
+            button{
+
+                h4{
+                    display: none;
+
+                    @include md{
+                        display: inline;
+                    }
+                }
+            }
         }
+ 
 
         .quote {
             grid-area: quote;

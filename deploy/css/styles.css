@@ -432,7 +432,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-family: "Nunito", sans-serif;
   background: #ffffff;
-  color: #0586ad;
+  color: rgb(5, 134, 173);
   text-align: left;
 }
 
@@ -447,7 +447,34 @@ body {
     grid-template-columns: 75% auto;
     font-family: "open sans", sans-serif;
     font-size: rem-clac(36);
-    color: #065299;
+    color: rgb(6, 82, 153);
+  }
+}
+
+h6 {
+  padding: 0px;
+  margin: 16px 0px 16px 0px;
+}
+
+.bold-font {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .bold-font {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.semi-bold {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .semi-bold {
+    font-size: 1.5rem;
+    font-weight: 300;
   }
 }
 
@@ -666,28 +693,6 @@ footer > div #contact ul li section {
   width: 100%;
 }
 
-.bold-font {
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-@media (min-width: 768px) {
-  .bold-font {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-}
-
-.semi-bold {
-  font-size: 0.875rem;
-  font-weight: 300;
-}
-@media (min-width: 768px) {
-  .semi-bold {
-    font-size: 1.5rem;
-    font-weight: 300;
-  }
-}
-
 .callout-pad-left {
   margin: 16px 0px 16px 0px;
   padding: 0px 16px 0px 16px;
@@ -734,6 +739,14 @@ footer > div #contact ul li section {
 #best-friends-container > div .best-friends-content {
   grid-template-columns: 75% auto;
   padding: 16px;
+}
+#best-friends-container > div .best-friends-content button h4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #best-friends-container > div .best-friends-content button h4 {
+    display: inline;
+  }
 }
 #best-friends-container > div .quote {
   grid-area: quote;
