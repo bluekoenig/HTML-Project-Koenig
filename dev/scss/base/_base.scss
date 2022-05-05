@@ -15,6 +15,10 @@ ul{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". big-grid .";
+
+        @include xl {
+            grid-template-columns: auto 1440px auto;
+        }
         
         >div{
             grid-area: big-grid;
@@ -36,7 +40,7 @@ ul{
 
 .search-grid{
     display: grid;
-    grid-template-columns: 16px 100% 16px;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". please .";
 
     >div{
@@ -48,7 +52,7 @@ ul{
     >div{
         >section{
             >input{
-                width: 80%;
+                width: 90%;
                 padding: 16px 16px 16px 16px;
                 // margin: 20px 20px 20px 20px;
                 box-sizing: border-box;

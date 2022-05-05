@@ -1,98 +1,89 @@
-#article-title{
+#article-title {
     margin-top: 44px;
     font-size: rem-calc(16);
     font-weight: 600;
 
-    @include md{
+    @include md {
         font-size: rem-calc(24);
-    font-weight: 600;
+        font-weight: 600;
     }
 }
 
-.article-cards{
+.article-cards {
     padding: 0px 16px 16px 16px;
 }
 
 
-   
+
 
 
 #article-layout {
-    >div{
-@include md{
-    display: grid;
-    // grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". ac .";
-}
+    >div {
 
-@include xl{
-    grid-template-columns: auto 1440px auto;
-}
+        ul {
 
-    }
-    
-    ul {
-
-        display: grid;
-        gap: 16px;
-       
-
-        @include md {
-            grid-area: ac;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "c1 c1 c2 c2"
-                "c3 c3 c4 c4"
-                ". c5 c5 .";
-        }
-
-        #c1 {
-            @include md {
-                grid-area: c1;
-            }
-        }
-
-        #c2 {
-            @include md {
-                grid-area: c2;
-            }
-        }
-
-        #c3 {
-            @include md {
-                grid-area: c3;
-            }
-        }
-
-        #c4 {
-            @include md {
-                grid-area: c4;
-            }
-        }
-
-        #c5 {
-            @include md {
-                grid-area: c5;
-            }
-        }
-
-        @include lg {
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-areas:
-                "c1 c1 c2 c2 c3 c3"
-                ". c4 c4 c5 c5 .";
-
-
-        }
-
-        @include xl {
             display: grid;
-            grid-template-columns: auto 1440px auto;
-            grid-template-areas: ". ac .";
+            gap: 16px;
+    
+    
+            @include md {
+                grid-area: ac;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    "c1 c1 c2 c2"
+                    "c3 c3 c4 c4"
+                    ". c5 c5 .";
+            }
+    
+            #c1 {
+                @include md {
+                    grid-area: c1;
+                }
+            }
+    
+            #c2 {
+                @include md {
+                    grid-area: c2;
+                }
+            }
+    
+            #c3 {
+                @include md {
+                    grid-area: c3;
+                }
+            }
+    
+            #c4 {
+                @include md {
+                    grid-area: c4;
+                }
+            }
+    
+            #c5 {
+                @include md {
+                    grid-area: c5;
+                }
+            }
+    
+            @include lg {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                    "c1 c1 c2 c2 c3 c3"
+                    ". c4 c4 c5 c5 .";
+    
+    
+            }
 
-            li {}
+            >section{
+                >img{
+                    width: 100%;
+                }
+            }
         }
+
     }
+
+    
 }
 
 #art-img {
