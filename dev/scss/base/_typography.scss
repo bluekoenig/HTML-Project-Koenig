@@ -26,8 +26,13 @@ h1 {
 }
 
 h6 {
+    font-size: rem-clac(16);
     padding: 0px;
     margin: 16px 0px 16px 0px;
+}
+
+h5 {
+    font-size: rem-calc(42);
 }
 
 .bold-font {
