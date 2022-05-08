@@ -532,7 +532,7 @@ header {
 }
 header div #leaf-logo {
   width: 72px;
-  padding: 24px 0px 24px 24px;
+  padding: 24px 24px 24px 24px;
 }
 header div #header-holder {
   display: flex;
@@ -621,8 +621,9 @@ footer > div #newsletter ::-ms-input-placeholder {
     font-size: 1.25rem;
   }
 }
-footer > div #follow div ul li i {
-  padding-right: 20px;
+footer > div #follow div ul li {
+  display: flex;
+  justify-content: space-between;
 }
 
 #article-title {
@@ -682,9 +683,6 @@ footer > div #follow div ul li i {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "c1 c1 c2 c2 c3 c3" ". c4 c4 c5 c5 .";
   }
-}
-#article-layout > div ul > section > img {
-  width: 100%;
 }
 
 #art-img {
