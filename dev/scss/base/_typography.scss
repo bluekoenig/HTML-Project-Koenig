@@ -6,8 +6,12 @@ body {
     font-family: 'Nunito', sans-serif;
    
     background: #ffffff;
-    color: rgb(5, 134, 173);
     text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -21,7 +25,7 @@ h1 {
         grid-template-columns: 75% auto;
         font-family: "open sans", sans-serif;
         font-size: rem-clac(36);
-        color: rgb(6, 82, 153);
+        color: var(--dark-teal)
     }
 }
 
@@ -31,9 +35,14 @@ h6 {
     margin: 16px 0px 16px 0px;
 }
 
-h5 {
-    font-size: rem-calc(42);
+h3{
+    margin-bottom: 12px;
 }
+
+h4{
+    margin-bottom: 12px;
+}
+
 
 .bold-font {
     // >section{
@@ -51,11 +60,12 @@ h5 {
 
 .semi-bold {
 
-    font-size: rem-calc(14);
+    font-size: rem-calc(24);
     font-weight: 300;
+    padding: 8px 8px 8px 8px;
 
     @include md {
-        font-size: rem-calc(24);
+        font-size: rem-calc(36);
         font-weight: 300;
     }
 }

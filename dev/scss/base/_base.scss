@@ -48,27 +48,7 @@ ul{
     }
 }
 
-#search{
-    >div{
-        >section{
-            >input{
-                width: 85%;
-                padding: 16px 16px 16px 16px;
-                // margin: 20px 20px 20px 20px;
-                box-sizing: border-box;
-            }
-            >button{
-                padding: 16px 16px 16px 16px;
-                margin: 16px 16px 16px 16px;
-                background-color: #39B6FD;
-                box-sizing: border-box;
-            }
-           
-        }
-      
-    }
-    
-}
+
 
 .desktop-up{
 
@@ -84,7 +64,6 @@ ul{
     
     @include md{
         display: block;
-        font-size: rem-calc(32);
         text-align: center;
         font-weight: 600;
     }
@@ -92,12 +71,13 @@ ul{
 }
 
 .spacing{
-    margin-top: 32px;
-
-    @include md{
-        margin-top: 64px;
-    }
+    margin-top: 24px;
 }
+
+.space-after{
+    margin-bottom: 24px;
+}
+
 
     
    

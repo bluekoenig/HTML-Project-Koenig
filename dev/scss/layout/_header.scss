@@ -4,13 +4,35 @@
 
 
 header {
-    padding-top: 24px;
     padding-bottom: 24px;
-    background-color: #B4F1E2;
+    background-color: var(--teal);
+
+    #leaf-logo{
+        padding: 24px 0px 24px 24px;
+    }
 
     img {
         // width: 10%
-        width: 100px;
+        width: 72px;
+    }
+
+    div{
+        section{
+            h1{
+
+                @include md{
+                    display: block;
+                    font-size: rem-calc(40);
+                }
+
+                @include lg{
+                    font-size: rem-calc(56);
+                }
+        }
+    }
+
+   
+        
     }
 
 }

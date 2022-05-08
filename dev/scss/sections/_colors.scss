@@ -1,0 +1,77 @@
+.dark-bleed {
+    background-color: var(--dark-blue);
+    color: black;
+
+    >img{
+        width: 100%;
+    }
+}
+
+.light-bleed {
+    background-color: var(--blue);
+    color: black;
+
+    
+
+    @include md {
+        font-size: rem-calc(20);
+    }
+    >img{
+        width: 100%;
+    }
+}
+
+.green-bleed {
+    background-color: var(--teal);
+    color: black;
+
+    @include md {
+        font-size: rem-calc(20);
+    }
+    >img{
+        width: 100%;
+    }
+}
+
+.button-color-light{
+    button{
+        background-color: var(--blue);
+        border: none;
+    }
+    
+}
+
+.button-color-dark{
+    button{
+        background-color: var(--dark-blue);
+        border: none;
+    }
+}
+
+.button2-color-light{
+    button{
+        background-color: var(--dark-blue);
+        border: none;
+        padding: 8px 8px 8px 8px;
+    }
+}
+
+.button2-color-dark{
+    button{
+        background-color: var(--dark-teal);
+        border: none;
+        padding: 8px 8px 8px 8px;
+    }
+}
+
+.input-color{
+    div{
+        input{
+        background-color: var(--teal);
+        padding: 10px 16px 10px 16px;
+        border: none;
+          }
+    }
+    
+   
+}

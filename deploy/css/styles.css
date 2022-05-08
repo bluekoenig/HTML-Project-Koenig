@@ -392,18 +392,6 @@ ul li {
   grid-area: please;
 }
 
-#search > div > section > input {
-  width: 85%;
-  padding: 16px 16px 16px 16px;
-  box-sizing: border-box;
-}
-#search > div > section > button {
-  padding: 16px 16px 16px 16px;
-  margin: 16px 16px 16px 16px;
-  background-color: #39B6FD;
-  box-sizing: border-box;
-}
-
 .desktop-up {
   display: none;
 }
@@ -419,19 +407,17 @@ ul li {
 @media (min-width: 768px) {
   .tablet-up {
     display: block;
-    font-size: 2rem;
     text-align: center;
     font-weight: 600;
   }
 }
 
 .spacing {
-  margin-top: 32px;
+  margin-top: 24px;
 }
-@media (min-width: 768px) {
-  .spacing {
-    margin-top: 64px;
-  }
+
+.space-after {
+  margin-bottom: 24px;
 }
 
 /* =============
@@ -441,8 +427,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-family: "Nunito", sans-serif;
   background: #ffffff;
-  color: rgb(5, 134, 173);
   text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 576px) {
@@ -456,7 +446,7 @@ body {
     grid-template-columns: 75% auto;
     font-family: "open sans", sans-serif;
     font-size: rem-clac(36);
-    color: rgb(6, 82, 153);
+    color: var(--dark-teal);
   }
 }
 
@@ -466,8 +456,12 @@ h6 {
   margin: 16px 0px 16px 0px;
 }
 
-h5 {
-  font-size: 2.625rem;
+h3 {
+  margin-bottom: 12px;
+}
+
+h4 {
+  margin-bottom: 12px;
 }
 
 .bold-font {
@@ -482,12 +476,13 @@ h5 {
 }
 
 .semi-bold {
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-weight: 300;
+  padding: 8px 8px 8px 8px;
 }
 @media (min-width: 768px) {
   .semi-bold {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     font-weight: 300;
   }
 }
@@ -495,6 +490,11 @@ h5 {
 /* =============
     Buttons
 ============= */
+button {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Forms
 ============= */
@@ -520,20 +520,33 @@ textarea {
     Header
 ============= */
 header {
-  padding-top: 24px;
   padding-bottom: 24px;
-  background-color: #B4F1E2;
+  background-color: var(--teal);
+}
+header #leaf-logo {
+  padding: 24px 0px 24px 24px;
 }
 header img {
-  width: 100px;
+  width: 72px;
+}
+@media (min-width: 768px) {
+  header div section h1 {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  header div section h1 {
+    font-size: 3.5rem;
+  }
 }
 
 /* =============
     Footer
 ============= */
 footer {
-  margin-top: 56px;
-  background-color: #1B9678;
+  padding-top: 56px;
+  background-color: var(--dark-teal);
   color: white;
 }
 footer > div {
@@ -805,4 +818,98 @@ footer > div #contact ul li section {
   #callouts > aside {
     grid-area: callouts;
   }
+}
+
+.dark-bleed {
+  background-color: var(--dark-blue);
+  color: black;
+}
+.dark-bleed > img {
+  width: 100%;
+}
+
+.light-bleed {
+  background-color: var(--blue);
+  color: black;
+}
+@media (min-width: 768px) {
+  .light-bleed {
+    font-size: 1.25rem;
+  }
+}
+.light-bleed > img {
+  width: 100%;
+}
+
+.green-bleed {
+  background-color: var(--teal);
+  color: black;
+}
+@media (min-width: 768px) {
+  .green-bleed {
+    font-size: 1.25rem;
+  }
+}
+.green-bleed > img {
+  width: 100%;
+}
+
+.button-color-light button {
+  background-color: var(--blue);
+  border: none;
+}
+
+.button-color-dark button {
+  background-color: var(--dark-blue);
+  border: none;
+}
+
+.button2-color-light button {
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 8px 8px 8px 8px;
+}
+
+.button2-color-dark button {
+  background-color: var(--dark-teal);
+  border: none;
+  padding: 8px 8px 8px 8px;
+}
+
+.input-color div input {
+  background-color: var(--teal);
+  padding: 10px 16px 10px 16px;
+  border: none;
+}
+
+#search > div > section > input {
+  width: 100%;
+  border: none;
+  padding: 16px 16px 16px 16px;
+  border-bottom: 3px solid var(--dark-blue);
+  border-radius: 0%;
+}
+#search > div > section ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--blue);
+  opacity: 1;
+  /* Firefox */
+}
+#search > div > section :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--blue);
+}
+#search > div > section ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--blue);
+}
+#search > div > section > button {
+  padding: 16px 16px 16px 16px;
+  margin: 16px 16px 16px 16px;
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+  border: none;
+}
+#search > div > section > button > img {
+  width: 36px;
 }
