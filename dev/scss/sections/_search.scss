@@ -1,11 +1,14 @@
 #search {
     >div {
         >section {
+
+display: flex;
+
             >input {
                 width: 100%;
                 border: none;
                 // box-sizing: border-box;
-                padding: 16px 16px 16px 16px;
+                padding: 16px 16px 0px 16px;
                 border-bottom: 3px solid var(--dark-blue);
                 border-radius: 0%;
                 // margin: 20px 20px 20px 20px;

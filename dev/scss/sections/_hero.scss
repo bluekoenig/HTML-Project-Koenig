@@ -5,40 +5,7 @@
 
 }
 
-.dark-bleed {
-    background-color: #39B6FD;
-    color: black;
 
-    >img{
-        width: 100%;
-    }
-}
-
-.light-bleed {
-    background-color: #8FD7FF;
-    color: black;
-
-    
-
-    @include md {
-        font-size: rem-calc(20);
-    }
-    >img{
-        width: 100%;
-    }
-}
-
-.green-bleed {
-    background-color: #B4F1E2;
-    color: black;
-
-    @include md {
-        font-size: rem-calc(20);
-    }
-    >img{
-        width: 100%;
-    }
-}
 
 
 
@@ -49,16 +16,27 @@
     @include md {
         margin: 24px 0px 24px 0px;
     }
+
+    div{
+        display: flex;
+    }
+   
 }
 
 .callout-pad-right {
+    display: flex;
     margin: 16px 16px 16px 0px;
     padding: 0px 16px 0px 16px;
 
     @include md {
         margin: 24px 0px 24px 0px;
     }
+
+    div{
+        display: flex;
+    }
 }
+
 
 #best-friends-container {
 

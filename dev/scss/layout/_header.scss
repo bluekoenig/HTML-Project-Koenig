@@ -7,35 +7,50 @@ header {
     padding-bottom: 24px;
     background-color: var(--teal);
 
-    #leaf-logo{
-        padding: 24px 0px 24px 24px;
-    }
-
-    img {
-        // width: 10%
-        width: 72px;
-    }
-
-    div{
-        section{
-            h1{
-
-                @include md{
-                    display: block;
-                    font-size: rem-calc(40);
-                }
-
-                @include lg{
-                    font-size: rem-calc(56);
-                }
+    div {
+        #leaf-logo {
+            width: 72px;
+            padding: 24px 0px 24px 24px;
         }
+
+
+        #header-holder {
+
+            display: flex;
+
+            img {
+                // width: 10%
+                width: 72px;
+            }
+
+            section{
+                h1 {
+
+                    @include md {
+                        display: block;
+                        font-size: rem-calc(40);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(56);
+                    }
+                }
+            }
+            }
+            
+
+
+
+
+
+
+        }
+
     }
 
-   
-        
-    }
 
-}
+
+
 
 
 

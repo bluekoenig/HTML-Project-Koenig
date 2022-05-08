@@ -1,75 +1,104 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
 
     padding-top: 56px;
 
     background-color: var(--dark-teal);
     color: white;
 
-    >div{
+    h3,h4{
+        color: var(--tan);
+    }
+
+    h6{
+        color: var(--dark-tan);
+    }
+
+    >div {
 
         display: grid;
         gap: 16px;
 
-        @include md{
+        @include md {
             grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "contact newsletter"
-            ". follow";
+            grid-template-areas:
+                "contact newsletter"
+                ". follow";
         }
 
-        @include lg{
+        @include lg {
             grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: 
-            "contact newsletter follow";
+            grid-template-areas:
+                "contact newsletter follow";
         }
 
-        #contact{
-            @include md{
+        #contact {
+            @include md {
                 grid-area: contact;
                 font-size: rem-calc(20);
             }
-            >h3{
-                .headline{
+
+            >h3 {
+                .headline {
                     font-size: rem-calc(20);
                 }
             }
-            ul{
-                li{
-                    section{
+
+            ul {
+                li {
+                    section {
                         display: grid;
                         grid-template-columns: 20% auto;
                     }
                 }
             }
         }
-        #newsletter{
-            @include md{
+
+        #newsletter {
+            @include md {
                 grid-area: newsletter;
                 font-size: rem-calc(20);
             }
 
 
-            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            ::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: var(--dark-teal);
-                opacity: 1; /* Firefox */
-              }
-              
-              :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                opacity: 1;
+                /* Firefox */
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
                 color: var(--dark-teal);
-              }
-              
-              ::-ms-input-placeholder { /* Microsoft Edge */
+            }
+
+            ::-ms-input-placeholder {
+                /* Microsoft Edge */
                 color: var(--dark-teal);
-              }
+            }
         }
-        #follow{
-            @include md{
+
+        #follow {
+            @include md {
                 grid-area: follow;
                 font-size: rem-calc(20);
             }
+
+            div {
+                ul {
+                    li {
+                        i{
+                            padding-right: 20px;
+                        }
+                       
+                    }
+                }
+
+            }
+
         }
     }
 }
