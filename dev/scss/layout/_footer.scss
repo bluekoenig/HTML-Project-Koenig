@@ -51,6 +51,19 @@ footer{
                 font-size: rem-calc(20);
             }
 
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: var(--dark-teal);
+                opacity: 1; /* Firefox */
+              }
+              
+              :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: var(--dark-teal);
+              }
+              
+              ::-ms-input-placeholder { /* Microsoft Edge */
+                color: var(--dark-teal);
+              }
         }
         #follow{
             @include md{

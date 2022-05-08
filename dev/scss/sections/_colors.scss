@@ -52,7 +52,7 @@
     button{
         background-color: var(--dark-blue);
         border: none;
-        padding: 8px 8px 8px 8px;
+        padding: 12px 12px 12px 12px;
     }
 }
 
@@ -60,7 +60,7 @@
     button{
         background-color: var(--dark-teal);
         border: none;
-        padding: 8px 8px 8px 8px;
+        padding: 12px 12px 12px 12px;
     }
 }
 
@@ -68,8 +68,9 @@
     div{
         input{
         background-color: var(--teal);
-        padding: 10px 16px 10px 16px;
+        padding: 16px 16px 16px 16px;
         border: none;
+        margin-bottom: 24px;
           }
     }
     

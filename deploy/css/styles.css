@@ -584,6 +584,20 @@ footer > div #contact ul li section {
     font-size: 1.25rem;
   }
 }
+footer > div #newsletter ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--dark-teal);
+  opacity: 1;
+  /* Firefox */
+}
+footer > div #newsletter :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--dark-teal);
+}
+footer > div #newsletter ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--dark-teal);
+}
 @media (min-width: 768px) {
   footer > div #follow {
     grid-area: follow;
@@ -867,19 +881,20 @@ footer > div #contact ul li section {
 .button2-color-light button {
   background-color: var(--dark-blue);
   border: none;
-  padding: 8px 8px 8px 8px;
+  padding: 12px 12px 12px 12px;
 }
 
 .button2-color-dark button {
   background-color: var(--dark-teal);
   border: none;
-  padding: 8px 8px 8px 8px;
+  padding: 12px 12px 12px 12px;
 }
 
 .input-color div input {
   background-color: var(--teal);
-  padding: 10px 16px 10px 16px;
+  padding: 16px 16px 16px 16px;
   border: none;
+  margin-bottom: 24px;
 }
 
 #search > div > section > input {
