@@ -468,7 +468,16 @@ h4 {
 }
 
 p {
-  padding: 16px 0px 16px 0px;
+  padding: 6px 0px 6px 0px;
+}
+@media (min-width: 768px) {
+  p {
+    padding: 16px 0px 16px 0px;
+  }
+}
+
+address {
+  font-style: normal;
 }
 
 .bold-font {
@@ -476,6 +485,12 @@ p {
   font-weight: 600;
 }
 @media (min-width: 768px) {
+  .bold-font {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1024px) {
   .bold-font {
     font-size: 1.5rem;
     font-weight: 600;
@@ -557,6 +572,7 @@ header div #header-holder img {
 ============= */
 footer {
   padding-top: 56px;
+  padding-bottom: 24px;
   background-color: var(--dark-teal);
   color: white;
 }
@@ -592,8 +608,10 @@ footer > div #contact > h3 .headline {
   font-size: 1.25rem;
 }
 footer > div #contact ul li section {
-  display: grid;
-  grid-template-columns: 20% auto;
+  display: flex;
+}
+footer > div #contact ul li section img {
+  margin-right: 24px;
 }
 @media (min-width: 768px) {
   footer > div #newsletter {
@@ -720,8 +738,8 @@ footer > div #follow div ul li {
 }
 
 .callout-pad-left {
-  margin: 16px 0px 16px 0px;
-  padding: 0px 16px 0px 16px;
+  margin: 16px 16px 16px 0px;
+  padding: 24px 16px 24px 16px;
 }
 @media (min-width: 768px) {
   .callout-pad-left {
@@ -730,12 +748,16 @@ footer > div #follow div ul li {
 }
 .callout-pad-left div {
   display: flex;
+  align-items: center;
+}
+
+.callout-pic {
+  margin-left: auto;
 }
 
 .callout-pad-right {
-  display: flex;
   margin: 16px 16px 16px 0px;
-  padding: 0px 16px 0px 16px;
+  padding: 24px 16px 24px 16px;
 }
 @media (min-width: 768px) {
   .callout-pad-right {
@@ -744,6 +766,7 @@ footer > div #follow div ul li {
 }
 .callout-pad-right div {
   display: flex;
+  align-items: center;
 }
 
 @media (min-width: 1440px) {
@@ -757,6 +780,13 @@ footer > div #follow div ul li {
     grid-template-columns: auto 485px 16px;
     grid-template-areas: ". bfc .";
   }
+}
+#best-friends-container .flex-arrows {
+  display: flex;
+}
+#best-friends-container .flex-arrows button {
+  margin-left: auto;
+  align-items: center;
 }
 @media (min-width: 576px) {
   #best-friends-container > div {
@@ -780,6 +810,7 @@ footer > div #follow div ul li {
 }
 #best-friends-container > div .best-friends-content button h4 {
   display: none;
+  font-size: 1rem;
 }
 @media (min-width: 768px) {
   #best-friends-container > div .best-friends-content button h4 {

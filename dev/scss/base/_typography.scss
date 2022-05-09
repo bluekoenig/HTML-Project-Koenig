@@ -45,7 +45,15 @@ h4{
 }
 
 p{
-    padding: 16px 0px 16px 0px;
+    padding: 6px 0px 6px 0px;
+
+    @include md{
+        padding: 16px 0px 16px 0px;
+    }
+}
+
+address{
+    font-style: normal;
 }
 
 
@@ -55,6 +63,11 @@ p{
     font-weight: 600;
 
     @include md {
+        font-size: rem-calc(18);
+        font-weight: 600;
+    }
+
+    @include lg{
         font-size: rem-calc(24);
         font-weight: 600;
     }

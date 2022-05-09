@@ -4,6 +4,7 @@
 footer {
 
     padding-top: 56px;
+    padding-bottom: 24px;
 
     background-color: var(--dark-teal);
     color: white;
@@ -49,8 +50,12 @@ footer {
             ul {
                 li {
                     section {
-                        display: grid;
-                        grid-template-columns: 20% auto;
+                        display: flex;
+                        // grid-template-columns: 20% auto;
+
+                        img{
+                            margin-right: 24px;
+                        }
                     }
                 }
             }
@@ -91,7 +96,7 @@ footer {
                 ul {
                     li { 
                         display: flex;
-                           justify-content: space-between;
+                           justify-content: space-between; 
                        
                     }
                 }

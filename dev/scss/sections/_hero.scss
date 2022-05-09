@@ -10,31 +10,44 @@
 
 
 .callout-pad-left {
-    margin: 16px 0px 16px 0px;
-    padding: 0px 16px 0px 16px;
+    margin: 16px 16px 16px 0px;
+    padding: 24px 16px 24px 16px;
 
     @include md {
         margin: 24px 0px 24px 0px;
     }
 
-    div{
-        display: flex;
+
+    div {
+            display: flex;
+            align-items: center;
+          
+        }
+       
     }
-   
-}
+
+    .callout-pic{
+        margin-left: auto;
+    }
+
+
 
 .callout-pad-right {
-    display: flex;
     margin: 16px 16px 16px 0px;
-    padding: 0px 16px 0px 16px;
+    padding: 24px 16px 24px 16px;
 
     @include md {
         margin: 24px 0px 24px 0px;
     }
 
-    div{
-        display: flex;
-    }
+
+    div {
+            display: flex;
+            align-items: center;
+          
+
+        }
+        
 }
 
 
@@ -42,19 +55,27 @@
 
     @include xxl {
 
-        .under-left{
+        .under-left {
             display: grid;
             grid-template-columns: 16px 485px auto;
             grid-template-areas: ". bfc .";
         }
 
-        .under-right{
+        .under-right {
             display: grid;
             grid-template-columns: auto 485px 16px;
             grid-template-areas: ". bfc .";
         }
-        
+
     }
+
+    .flex-arrows{
+        display: flex;
+        button{
+            margin-left: auto;
+            align-items: center;
+        }
+    } 
 
     >div {
         @include sm {
@@ -70,22 +91,26 @@
             grid-area: bfc;
         }
 
+       
+
         .best-friends-content {
             grid-template-columns: 75% auto;
             padding: 16px;
 
-            button{
+            button {
 
-                h4{
+                h4 {
                     display: none;
+                    font-size: rem-calc(16);
 
-                    @include md{
+                    @include md {
                         display: inline;
+                        
                     }
                 }
             }
         }
- 
+
 
         .quote {
             grid-area: quote;
