@@ -589,7 +589,7 @@ footer > div {
 @media (min-width: 768px) {
   footer > div {
     grid-template-columns: 50% auto;
-    grid-template-areas: "contact newsletter" ". follow";
+    grid-template-areas: "contact newsletter" "contact follow";
   }
 }
 @media (min-width: 1024px) {
@@ -612,6 +612,7 @@ footer > div #contact ul li section {
 }
 footer > div #contact ul li section img {
   margin-right: 24px;
+  align-items: center;
 }
 @media (min-width: 768px) {
   footer > div #newsletter {
@@ -637,11 +638,32 @@ footer > div #newsletter ::-ms-input-placeholder {
   footer > div #follow {
     grid-area: follow;
     font-size: 1.25rem;
+    padding-top: 0;
+    margin-top: -75px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #follow {
+    margin: 0;
+    text-align: right;
+  }
+}
+footer > div #follow div ul {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  footer > div #follow div ul {
+    justify-content: flex-end;
   }
 }
 footer > div #follow div ul li {
-  display: flex;
-  justify-content: space-between;
+  margin-right: 16px;
+}
+@media (min-width: 1024px) {
+  footer > div #follow div ul li {
+    margin-right: 0;
+    margin-left: 16px;
+  }
 }
 
 #article-title {
