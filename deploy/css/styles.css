@@ -737,7 +737,7 @@ footer > div #follow div ul li {
 
 #gallery ul {
   display: grid;
-  grid-template-rows: 50vh 30vh;
+  grid-template-rows: 30vh 30vh 30vh;
 }
 @media (min-width: 768px) {
   #gallery ul {
