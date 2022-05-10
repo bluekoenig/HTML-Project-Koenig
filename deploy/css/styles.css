@@ -742,6 +742,7 @@ footer > div #follow div ul li {
 @media (min-width: 768px) {
   #gallery ul {
     grid-template-columns: 60% auto;
+    grid-template-rows: 30vh 30vh;
     grid-template-areas: "g1 g1" "g2 g3";
   }
 }

@@ -273,6 +273,26 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/icons\/location-arrow-light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/location-arrow-light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/mobile-android-light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/mobile-android-light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/icons\/Path.png" : {
       "ft" : 32768,
       "iS" : 216,
