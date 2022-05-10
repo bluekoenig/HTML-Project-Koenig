@@ -35,6 +35,10 @@
             @include md {
                 grid-area: g1;
             }
+
+            @include xl{
+                background-position: center left;
+            }
         }
 
         #g2 {

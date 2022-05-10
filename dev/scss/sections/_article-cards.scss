@@ -1,5 +1,7 @@
 #article-title {
     margin-top: 44px;
+    margin-bottom: 24px;
+    color: var(--dark-blue);
     font-size: rem-calc(16);
     font-weight: 600;
 
@@ -34,10 +36,27 @@
                     "c3 c3 c4 c4"
                     ". c5 c5 .";
             }
+
+            li{
+
+                aside{
+                    height: 200px;
+                    background-size: cover;
+                    background-position: center;
+
+                    @include xl{
+                        height: 250px;
+                    }
+                }
+            }
     
             #c1 {
                 @include md {
                     grid-area: c1;
+                }
+
+                aside{
+                    background-image: url('../img/article headers/daber.png');
                 }
             }
     
@@ -45,11 +64,18 @@
                 @include md {
                     grid-area: c2;
                 }
+                aside{
+                    background-image: url('../img/article headers/fishing guy.png');
+                }
             }
     
             #c3 {
                 @include md {
                     grid-area: c3;
+                }
+                aside{
+                    background-image: url('../img/article headers/nighty fishing guy.png');
+                    background-position: center top;
                 }
             }
     
@@ -57,11 +83,17 @@
                 @include md {
                     grid-area: c4;
                 }
+                aside{
+                    background-image: url('../img/article headers/flora.png');
+                }
             }
     
             #c5 {
                 @include md {
                     grid-area: c5;
+                }
+                aside{
+                    background-image: url('../img/article headers/museum.png');
                 }
             }
     

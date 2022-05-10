@@ -669,6 +669,8 @@ footer > div #follow div ul li {
 
 #article-title {
   margin-top: 44px;
+  margin-bottom: 24px;
+  color: var(--dark-blue);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -694,30 +696,56 @@ footer > div #follow div ul li {
     grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
   }
 }
+#article-layout > div ul li aside {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1200px) {
+  #article-layout > div ul li aside {
+    height: 250px;
+  }
+}
 @media (min-width: 768px) {
   #article-layout > div ul #c1 {
     grid-area: c1;
   }
+}
+#article-layout > div ul #c1 aside {
+  background-image: url("../img/article headers/daber.png");
 }
 @media (min-width: 768px) {
   #article-layout > div ul #c2 {
     grid-area: c2;
   }
 }
+#article-layout > div ul #c2 aside {
+  background-image: url("../img/article headers/fishing guy.png");
+}
 @media (min-width: 768px) {
   #article-layout > div ul #c3 {
     grid-area: c3;
   }
+}
+#article-layout > div ul #c3 aside {
+  background-image: url("../img/article headers/nighty fishing guy.png");
+  background-position: center top;
 }
 @media (min-width: 768px) {
   #article-layout > div ul #c4 {
     grid-area: c4;
   }
 }
+#article-layout > div ul #c4 aside {
+  background-image: url("../img/article headers/flora.png");
+}
 @media (min-width: 768px) {
   #article-layout > div ul #c5 {
     grid-area: c5;
   }
+}
+#article-layout > div ul #c5 aside {
+  background-image: url("../img/article headers/museum.png");
 }
 @media (min-width: 1024px) {
   #article-layout > div ul {
@@ -756,6 +784,11 @@ footer > div #follow div ul li {
 @media (min-width: 768px) {
   #gallery ul #g1 {
     grid-area: g1;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery ul #g1 {
+    background-position: center left;
   }
 }
 #gallery ul #g2 {
