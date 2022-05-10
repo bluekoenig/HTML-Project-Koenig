@@ -551,6 +551,7 @@ header div #leaf-logo {
 }
 header div #header-holder {
   display: flex;
+  align-items: center;
 }
 header div #header-holder img {
   width: 72px;
@@ -734,13 +735,49 @@ footer > div #follow div ul li {
   grid-template-columns: 75% auto;
 }
 
-.gallery img {
-  width: 50%;
+#gallery ul {
+  display: grid;
+  grid-template-rows: 50vh 30vh;
+}
+@media (min-width: 768px) {
+  #gallery ul {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "g1 g1" "g2 g3";
+  }
+}
+#gallery ul li {
+  background-size: cover;
+  background-position: center;
+}
+#gallery ul #g1 {
+  background-image: url("../img/large images/photo gallery 2.jpeg");
+}
+@media (min-width: 768px) {
+  #gallery ul #g1 {
+    grid-area: g1;
+  }
+}
+#gallery ul #g2 {
+  background-image: url("../img/large images/photo gallery 5.jpeg");
+}
+@media (min-width: 768px) {
+  #gallery ul #g2 {
+    grid-area: g2;
+  }
+}
+#gallery ul #g3 {
+  background-image: url("../img/large images/photo gallery 7.jpeg");
+}
+@media (min-width: 768px) {
+  #gallery ul #g3 {
+    grid-area: g3;
+  }
 }
 
-#bigpic img {
+#bigpic {
   width: 100%;
   margin-top: 50px;
+  background-size: cover;
 }
 
 .css-grid-gallery {
@@ -750,13 +787,21 @@ footer > div #follow div ul li {
 
 @media (min-width: 768px) {
   #little-gallery > div > ul {
-    display: grid;
-    grid-template-columns: 50% auto;
+    display: flex;
   }
 }
 
-#hero #hero-please-work {
-  width: 100%;
+#hero {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("../img/hero image/new-hero-image.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+@media (min-width: 1024px) {
+  #hero {
+    height: 70vh;
+  }
 }
 
 .callout-pad-left {
@@ -772,9 +817,21 @@ footer > div #follow div ul li {
   display: flex;
   align-items: center;
 }
-
-.callout-pic {
-  margin-left: auto;
+.callout-pad-left div aside {
+  background-image: url("../img/icons/coelocanth.png");
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  .callout-pad-left div aside {
+    width: 113px;
+    height: 113px;
+    background-size: cover;
+  }
+  .callout-pad-left div aside img {
+    display: none;
+  }
 }
 
 .callout-pad-right {
@@ -789,6 +846,22 @@ footer > div #follow div ul li {
 .callout-pad-right div {
   display: flex;
   align-items: center;
+}
+.callout-pad-right div aside {
+  background-image: url("../img/icons/fisherman.png");
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  .callout-pad-right div aside {
+    width: 113px;
+    height: 113px;
+    background-size: cover;
+  }
+  .callout-pad-right div aside img {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -805,9 +878,10 @@ footer > div #follow div ul li {
 }
 #best-friends-container .flex-arrows {
   display: flex;
+  padding: 16px 16px 16px 16px;
 }
-#best-friends-container .flex-arrows button {
-  margin-left: auto;
+#best-friends-container .flex-arrows aside button {
+  margin-right: auto;
   align-items: center;
 }
 @media (min-width: 576px) {
@@ -827,22 +901,21 @@ footer > div #follow div ul li {
   }
 }
 #best-friends-container > div .best-friends-content {
-  grid-template-columns: 75% auto;
   padding: 16px;
 }
-#best-friends-container > div .best-friends-content button h4 {
-  display: none;
+#best-friends-container > div .best-friends-content button {
+  display: inline-block;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  #best-friends-container > div .best-friends-content button h4 {
-    display: inline;
+  #best-friends-container > div .best-friends-content button {
+    display: inline-block;
   }
 }
-#best-friends-container > div .quote {
+#best-friends-container .quote {
   grid-area: quote;
 }
-#best-friends-container > div .button {
+#best-friends-container .button {
   grid-area: button;
 }
 

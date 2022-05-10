@@ -1,12 +1,14 @@
 #hero {
-    #hero-please-work {
-        width: 100%;
+    width: 100vw;
+    height: 50vh;
+    background-image: url('../img/hero image/new-hero-image.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    @include lg {
+        height: 70vh;
     }
-
 }
-
-
-
 
 
 .callout-pad-left {
@@ -19,16 +21,35 @@
 
 
     div {
-            display: flex;
-            align-items: center;
-          
+        display: flex;
+        align-items: center;
+
+
+
+
+        aside {
+            background-image: url('../img/icons/coelocanth.png');
+            
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+
+            @include md {
+                img{
+                    display: none;
+                }
+                width: 113px;
+                height: 113px;
+                background-size: cover;
+            }
         }
-       
     }
 
-    .callout-pic{
-        margin-left: auto;
-    }
+}
+
+// .callout-pic {
+//     margin-left: auto;
+// }
 
 
 
@@ -36,18 +57,35 @@
     margin: 16px 16px 16px 0px;
     padding: 24px 16px 24px 16px;
 
+
     @include md {
         margin: 24px 0px 24px 0px;
     }
 
 
     div {
-            display: flex;
-            align-items: center;
-          
+        display: flex;
+        align-items: center;
 
+        aside {
+            background-image: url('../img/icons/fisherman.png');
+          
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+
+            @include md {
+                img{
+                    display: none;
+                }
+                width: 113px;
+                height: 113px;
+                background-size: cover;
+            }
         }
-        
+
+    }
+
 }
 
 
@@ -69,13 +107,18 @@
 
     }
 
-    .flex-arrows{
+    .flex-arrows {
         display: flex;
-        button{
-            margin-left: auto;
-            align-items: center;
+        padding: 16px 16px 16px 16px;
+
+        aside {
+            button {
+                margin-right: auto;
+                align-items: center;
+            }
         }
-    } 
+
+    }
 
     >div {
         @include sm {
@@ -91,37 +134,35 @@
             grid-area: bfc;
         }
 
-       
+
 
         .best-friends-content {
-            grid-template-columns: 75% auto;
+            // grid-template-columns: 75% auto;
             padding: 16px;
 
             button {
+                display: inline-block;
+                font-size: rem-calc(16);
 
-                h4 {
-                    display: none;
-                    font-size: rem-calc(16);
+                @include md {
+                    display: inline-block;
 
-                    @include md {
-                        display: inline;
-                        
-                    }
                 }
             }
         }
-
-
-        .quote {
-            grid-area: quote;
-        }
-
-        .button {
-            grid-area: button;
-        }
-
     }
+
+
+    .quote {
+        grid-area: quote;
+    }
+
+    .button {
+        grid-area: button;
+    }
+
 }
+
 
 #callouts {
 
