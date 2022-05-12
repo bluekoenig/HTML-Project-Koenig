@@ -57,6 +57,13 @@ footer {
                             margin-right: 24px;
                             align-items: center;
                         }
+
+                        a:link, a:vistied{
+color:  var(white)
+                            a:hover, a:active{
+
+                            }
+                        }
                     }
                 }
             }
@@ -85,6 +92,15 @@ footer {
                 /* Microsoft Edge */
                 color: var(--dark-teal);
             }
+
+            button{
+                cursor: pointer;
+                transition: .25s;
+
+                &:hover{
+                  background-color: var(--dark-dark-blue);
+                }
+            }
         }
 
         #follow {
@@ -103,6 +119,7 @@ footer {
             div {
                 ul { 
                     display: flex;
+                    cursor: pointer;
 
                     @include lg{
                         justify-content: flex-end;

@@ -41,10 +41,25 @@
     
 }
 
+.detail-button-dark{
+    button{
+        background-color: var(--dark-blue);
+        border: none;   
+    }
+   
+}
+
 .button-color-dark{
     button{
         background-color: var(--dark-blue);
         border: none;
+
+        cursor: pointer;
+                transition: .25s;
+
+                &:hover{
+                  background-color: var(--dark-dark-blue);
+                }
     }
 }
 
@@ -53,6 +68,13 @@
         background-color: var(--dark-blue);
         border: none;
         padding: 12px 12px 12px 12px;
+
+        cursor: pointer;
+                transition: .25s;
+
+                &:hover{
+                  background-color: var(--dark-dark-blue);
+                }
     }
 }
 
@@ -61,6 +83,13 @@
         background-color: var(--dark-teal);
         border: none;
         padding: 12px 12px 12px 12px;
+
+        cursor: pointer;
+                transition: .25s;
+
+                &:hover{
+                  background-color: var(--dark-dark-teal);
+                }
     }
 }
 

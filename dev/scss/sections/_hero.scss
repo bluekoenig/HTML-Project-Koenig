@@ -7,6 +7,7 @@
 
     @include lg {
         height: 70vh;
+        background-position: center left;
     }
 }
 
@@ -22,26 +23,27 @@
 
     div {
         display: flex;
-       
+
 
 
 
         aside {
             background-image: url('../img/icons/coelocanth.png');
-            
+
             width: 85px;
             height: 85px;
             border-radius: 100%;
             margin-left: auto;
 
             @include md {
-                img{
+                img {
                     display: none;
                 }
+
                 width: 113px;
                 height: 113px;
                 background-size: cover;
-            
+
             }
         }
     }
@@ -66,20 +68,21 @@
 
     div {
         display: flex;
-       
+
 
         aside {
             background-image: url('../img/icons/fisherman.png');
-          
+
             width: 85px;
             height: 85px;
             border-radius: 100%;
             margin-left: auto;
 
             @include md {
-                img{
+                img {
                     display: none;
                 }
+
                 width: 113px;
                 height: 113px;
                 background-size: cover;
@@ -91,6 +94,35 @@
 
 }
 
+.detail-button {
+    button {
+        display: flex;
+        align-items: center;
+cursor: pointer;
+
+        span {
+            display: none;
+
+            @include lg {
+                display: block;
+                padding: 0px 10px 0px 0px;
+            }
+        }
+    }
+}
+
+.callout-image {
+    div {
+        aside {
+
+            display: flex;
+            margin-left: auto;
+
+
+        }
+    }
+
+}
 
 #best-friends-container {
 
@@ -116,13 +148,15 @@
 
         aside {
             margin-left: auto;
-           align-content: center;
+            align-content: center;
 
         }
 
     }
 
-    >div {
+    div {
+        // align-items: center;
+        
         @include sm {
             grid-template-areas: "quote button";
         }

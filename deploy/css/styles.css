@@ -12,13 +12,15 @@ html {
 ============= */
 :root {
   --teal: #B4F1E2;
-  --dark-teal: #1B9678;
+  --dark-teal: #48B198;
   --blue: #8FD7FF;
   --dark-blue: #39B6FD;
   --black: black;
   --white: white;
   --tan: #E0DFD5;
   --dark-tan: #E4E3D7;
+  --dark-dark-blue: #2D9AD8;
+  --dark-dark-teal: #1B9678;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -644,6 +646,13 @@ footer > div #newsletter ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--dark-teal);
 }
+footer > div #newsletter button {
+  cursor: pointer;
+  transition: 0.25s;
+}
+footer > div #newsletter button:hover {
+  background-color: var(--dark-dark-blue);
+}
 @media (min-width: 768px) {
   footer > div #follow {
     grid-area: follow;
@@ -660,6 +669,7 @@ footer > div #newsletter ::-ms-input-placeholder {
 }
 footer > div #follow div ul {
   display: flex;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   footer > div #follow div ul {
@@ -844,6 +854,7 @@ footer > div #follow div ul li {
 @media (min-width: 1024px) {
   #hero {
     height: 70vh;
+    background-position: center left;
   }
 }
 
@@ -908,6 +919,26 @@ footer > div #follow div ul li {
   }
 }
 
+.detail-button button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.detail-button button span {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .detail-button button span {
+    display: block;
+    padding: 0px 10px 0px 0px;
+  }
+}
+
+.callout-image div aside {
+  display: flex;
+  margin-left: auto;
+}
+
 @media (min-width: 1440px) {
   #best-friends-container .under-left {
     display: grid;
@@ -929,30 +960,30 @@ footer > div #follow div ul li {
   align-content: center;
 }
 @media (min-width: 576px) {
-  #best-friends-container > div {
+  #best-friends-container div {
     grid-template-areas: "quote button";
   }
 }
 @media (min-width: 768px) {
-  #best-friends-container > div {
+  #best-friends-container div {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1440px) {
-  #best-friends-container > div {
+  #best-friends-container div {
     grid-area: bfc;
   }
 }
-#best-friends-container > div .best-friends-content {
+#best-friends-container div .best-friends-content {
   padding: 16px;
 }
-#best-friends-container > div .best-friends-content button {
+#best-friends-container div .best-friends-content button {
   display: inline-block;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  #best-friends-container > div .best-friends-content button {
+  #best-friends-container div .best-friends-content button {
     display: inline-block;
   }
 }
@@ -1034,21 +1065,41 @@ footer > div #follow div ul li {
   border: none;
 }
 
+.detail-button-dark button {
+  background-color: var(--dark-blue);
+  border: none;
+}
+
 .button-color-dark button {
   background-color: var(--dark-blue);
   border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.button-color-dark button:hover {
+  background-color: var(--dark-dark-blue);
 }
 
 .button2-color-light button {
   background-color: var(--dark-blue);
   border: none;
   padding: 12px 12px 12px 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.button2-color-light button:hover {
+  background-color: var(--dark-dark-blue);
 }
 
 .button2-color-dark button {
   background-color: var(--dark-teal);
   border: none;
   padding: 12px 12px 12px 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.button2-color-dark button:hover {
+  background-color: var(--dark-dark-teal);
 }
 
 .input-color div input {
@@ -1082,13 +1133,18 @@ footer > div #follow div ul li {
   /* Microsoft Edge */
   color: var(--blue);
 }
-#search > div > section > button {
+#search > div > section button {
   padding: 16px 16px 16px 16px;
   margin: 16px 16px 16px 16px;
   background-color: var(--dark-blue);
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+  transition: 0.25s;
 }
-#search > div > section > button > img {
+#search > div > section button > img {
   width: 36px;
+}
+#search > div > section button:hover {
+  background-color: var(--dark-dark-blue);
 }
