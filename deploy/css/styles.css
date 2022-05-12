@@ -517,6 +517,15 @@ button {
   padding: 0;
 }
 
+span {
+  display: none;
+}
+@media (min-width: 1024px) {
+  span {
+    display: block;
+  }
+}
+
 /* =============
     Forms
 ============= */
@@ -849,13 +858,13 @@ footer > div #follow div ul li {
 }
 .callout-pad-left div {
   display: flex;
-  align-items: center;
 }
 .callout-pad-left div aside {
   background-image: url("../img/icons/coelocanth.png");
   width: 85px;
   height: 85px;
   border-radius: 100%;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   .callout-pad-left div aside {
@@ -879,19 +888,20 @@ footer > div #follow div ul li {
 }
 .callout-pad-right div {
   display: flex;
-  align-items: center;
 }
 .callout-pad-right div aside {
   background-image: url("../img/icons/fisherman.png");
   width: 85px;
   height: 85px;
   border-radius: 100%;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   .callout-pad-right div aside {
     width: 113px;
     height: 113px;
     background-size: cover;
+    margin-left: auto;
   }
   .callout-pad-right div aside img {
     display: none;
@@ -914,9 +924,9 @@ footer > div #follow div ul li {
   display: flex;
   padding: 16px 16px 16px 16px;
 }
-#best-friends-container .flex-arrows aside button {
-  margin-right: auto;
-  align-items: center;
+#best-friends-container .flex-arrows aside {
+  margin-left: auto;
+  align-content: center;
 }
 @media (min-width: 576px) {
   #best-friends-container > div {

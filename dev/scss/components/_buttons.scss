@@ -6,3 +6,11 @@ button{
     margin: 0;
     padding: 0;
 }
+
+span{
+    display: none;
+
+    @include lg{
+        display: block;
+    }
+}

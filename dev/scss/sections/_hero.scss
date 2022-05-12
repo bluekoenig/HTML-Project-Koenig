@@ -22,8 +22,7 @@
 
     div {
         display: flex;
-        align-items: center;
-
+       
 
 
 
@@ -33,6 +32,7 @@
             width: 85px;
             height: 85px;
             border-radius: 100%;
+            margin-left: auto;
 
             @include md {
                 img{
@@ -41,6 +41,7 @@
                 width: 113px;
                 height: 113px;
                 background-size: cover;
+            
             }
         }
     }
@@ -65,7 +66,7 @@
 
     div {
         display: flex;
-        align-items: center;
+       
 
         aside {
             background-image: url('../img/icons/fisherman.png');
@@ -73,6 +74,7 @@
             width: 85px;
             height: 85px;
             border-radius: 100%;
+            margin-left: auto;
 
             @include md {
                 img{
@@ -81,6 +83,7 @@
                 width: 113px;
                 height: 113px;
                 background-size: cover;
+                margin-left: auto;
             }
         }
 
@@ -112,10 +115,9 @@
         padding: 16px 16px 16px 16px;
 
         aside {
-            button {
-                margin-right: auto;
-                align-items: center;
-            }
+            margin-left: auto;
+           align-content: center;
+
         }
 
     }
