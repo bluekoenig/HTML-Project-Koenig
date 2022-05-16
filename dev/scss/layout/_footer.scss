@@ -6,7 +6,7 @@ footer {
     padding-top: 56px;
     padding-bottom: 24px;
 
-    background-color: var(--dark-teal);
+    background-color: var(--dark-dark-teal);
     color: white;
 
     h3,h4{
@@ -59,10 +59,11 @@ footer {
                         }
 
                         a:link, a:vistied{
-color:  var(white)
-                            a:hover, a:active{
+                            color:  var(white)
 
-                            }
+                            // a:hover, a:active{
+
+                            // }
                         }
                     }
                 }

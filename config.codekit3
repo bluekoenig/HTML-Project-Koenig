@@ -7,7 +7,7 @@
       "uuidString" : "5A5DDCE4-EFA0-4868-8BAA-5628151B1AED"
     }
   ],
-  "creatorBuild" : "34359",
+  "creatorBuild" : "34365",
   "files" : {
     "\/.gitattributes" : {
       "cB" : 0,
@@ -534,6 +534,14 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 3
     },
+    "\/dev\/global\/nav.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
+    },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -861,7 +869,7 @@
   "projectAttributes" : {
     "creationDate" : 671031902.95721602,
     "displayValue" : "HTML-Project-Koenig",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "meme-cocaine",
     "iconImageWasSetByUser" : 1
   },

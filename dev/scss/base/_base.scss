@@ -70,6 +70,22 @@ ul{
    
 }
 
+.tablet-down{
+     
+    @include sm{
+        display: block;
+    }
+
+    @include md{
+        display:block;
+    
+    }
+
+    @include lg{
+        display: none;
+    }
+}
+
 .spacing{
     margin-top: 24px;
 }
