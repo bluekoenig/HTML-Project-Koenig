@@ -365,6 +365,10 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -567,8 +571,57 @@ textarea {
 ============= */
 #close button {
   padding: 16px 16px 16px 16px;
-  background-color: var(--dark-dark-blue);
+  color: var(--dark-dark-blue);
   border: none;
+}
+
+nav section {
+  background-color: var(--dark-dark-teal);
+  height: 100vh;
+  padding: 16px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 35vw;
+  box-sizing: border-box;
+}
+@media (min-width: 1024px) {
+  nav section {
+    background-color: var(--teal);
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+nav section aside button {
+  display: flex;
+  margin-left: auto;
+  background-color: var(--dark-dark-teal);
+  border: none;
+  color: var(--teal);
+  padding: 24px;
+  cursor: pointer;
+}
+nav section aside {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+nav section aside ul li a:link,
+nav section aside ul li a:visited {
+  text-decoration: none;
+  transition: 0.5s;
+  color: var(--white);
+  padding: 10px;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+nav section aside ul li a:link:hover, nav section aside ul li a:link:active,
+nav section aside ul li a:visited:hover,
+nav section aside ul li a:visited:active {
+  color: var(--dark-dark-blue);
 }
 
 /* =============
@@ -1150,6 +1203,11 @@ footer > div #follow div ul li {
   margin-bottom: 24px;
 }
 
+@media (min-width: 768px) {
+  #search {
+    margin-top: 145px;
+  }
+}
 #search > div > section {
   display: flex;
 }

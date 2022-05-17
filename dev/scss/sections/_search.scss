@@ -1,4 +1,9 @@
 #search {
+
+  @include md{
+    margin-top: 145px;
+  }
+
     >div {
         >section {
 

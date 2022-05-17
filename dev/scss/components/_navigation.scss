@@ -2,12 +2,75 @@
     Navigation
 ============= */
 
-#close{
+#close {
 
-            button{
-                padding: 16px 16px 16px 16px;
-                background-color: var(--dark-dark-blue);
-                border: none;
-       
+    button {
+        padding: 16px 16px 16px 16px;
+        color: var(--dark-dark-blue);
+        border: none;
+
+    }
 }
+
+nav {
+    section {
+        background-color: var(--dark-dark-teal);
+        height: 100vh;
+        padding: 16px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 35vw;
+        box-sizing: border-box;
+
+        @include lg {
+            background-color: var(--teal);
+            display: block;
+            height: 100%;
+            padding: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        aside {
+
+
+            button {
+                display: flex;
+                margin-left: auto;
+                background-color: var(--dark-dark-teal);
+                border: none;
+                color: var(--teal);
+                padding: 24px;
+                cursor: pointer;
+            }
+        }
+
+        aside {
+            display: flex;
+            justify-content: center;
+            margin-top: 2vh;
+            ul {
+                li {
+
+                    a:link,
+                    a:visited {
+                        text-decoration: none;
+                        transition: .5s;
+                        color: var(--white);
+                        padding: 10px;
+                        display: inline-block;
+                        font-size: rem-calc(24);
+
+                        &:hover,
+                        &:active {
+                            color: var(--dark-dark-blue)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 }
