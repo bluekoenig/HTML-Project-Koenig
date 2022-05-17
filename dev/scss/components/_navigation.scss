@@ -13,7 +13,7 @@
 }
 
 nav {
-   
+
     section {
         display: none;
         background-color: var(--dark-dark-teal);
@@ -52,8 +52,26 @@ nav {
             display: flex;
             justify-content: center;
             margin-top: 2vh;
+
+            @include lg {
+                display: block;
+                margin-top: 0;
+
+
+            }
+
             ul {
+                @include lg {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
                 li {
+
+                    @include lg{
+                        margin: 0;
+                        margin-left: 16px;
+                    }
 
                     a:link,
                     a:visited {
@@ -69,6 +87,27 @@ nav {
                             color: var(--dark-dark-blue)
                         }
                     }
+
+                    @include lg {
+
+                        a:link,
+                        a:visited {
+                            text-decoration: none;
+                            transition: .5s;
+                            color: var(--dark-blue);
+                            padding: 10px;
+                            display: inline-block;
+                            font-size: rem-calc(24);
+
+                            &:hover,
+                            &:active {
+                                color: var(--dark-dark-blue)
+                            }
+                        }
+                    padding: 0;
+
+                    }
+
                 }
             }
         }

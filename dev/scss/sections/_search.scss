@@ -4,6 +4,10 @@
     margin-top: 145px;
   }
 
+  @include lg{
+    margin-top: 190px;
+  }
+
     >div {
         >section {
 

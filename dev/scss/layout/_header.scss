@@ -10,30 +10,36 @@ header {
     bottom: 0;
     left: 0;
 
-    @include md{
+    @include md {
         position: fixed;
         width: 100%;
         top: 0;
         bottom: auto;
-left: 0;
+        left: 0;
     }
 
     padding-bottom: 24px;
     background-color: var(--teal);
-    
+
 
     div {
 
 
-        
+
+@include md{
+    display: grid;
+    grid-template-rows: auto;
+    margin-right: auto;
+}
+
         #leaf-logo {
             display: flex;
-        justify-content: flex-end;
-        align-items: center;
+            justify-content: flex-end;
+            align-items: center;
             width: 72px;
             padding: 24px 24px 24px 24px;
 
-            button{
+            button {
                 background-color: transparent;
                 border: none;
             }
@@ -51,30 +57,30 @@ left: 0;
                 width: 72px;
             }
 
-            section{
+            section {
                 h1 {
 
                     @include md {
                         display: block;
-                        font-size: rem-calc(40);
+                        font-size: rem-calc(32);
                     }
 
                     @include lg {
-                        font-size: rem-calc(56);
+                        font-size: rem-calc(40);
                     }
                 }
             }
-            }
-            
-
-
-
-
-
-
         }
 
+
+
+
+
+
+
     }
+
+}
 
 
 

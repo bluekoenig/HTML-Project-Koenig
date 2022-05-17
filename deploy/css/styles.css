@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: block;
     grid-template-columns: 75% auto;
     font-family: "open sans", sans-serif;
-    font-size: rem-clac(36);
+    font-size: rem-clac(24);
     color: var(--dark-teal);
   }
 }
@@ -614,6 +614,24 @@ nav section aside {
   justify-content: center;
   margin-top: 2vh;
 }
+@media (min-width: 1024px) {
+  nav section aside {
+    display: block;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  nav section aside ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1024px) {
+  nav section aside ul li {
+    margin: 0;
+    margin-left: 16px;
+  }
+}
 nav section aside ul li a:link,
 nav section aside ul li a:visited {
   text-decoration: none;
@@ -627,6 +645,25 @@ nav section aside ul li a:link:hover, nav section aside ul li a:link:active,
 nav section aside ul li a:visited:hover,
 nav section aside ul li a:visited:active {
   color: var(--dark-dark-blue);
+}
+@media (min-width: 1024px) {
+  nav section aside ul li {
+    padding: 0;
+  }
+  nav section aside ul li a:link,
+nav section aside ul li a:visited {
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--dark-blue);
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  nav section aside ul li a:link:hover, nav section aside ul li a:link:active,
+nav section aside ul li a:visited:hover,
+nav section aside ul li a:visited:active {
+    color: var(--dark-dark-blue);
+  }
 }
 
 /* =============
@@ -647,6 +684,13 @@ header {
     top: 0;
     bottom: auto;
     left: 0;
+  }
+}
+@media (min-width: 768px) {
+  header div {
+    display: grid;
+    grid-template-rows: auto;
+    margin-right: auto;
   }
 }
 header div #leaf-logo {
@@ -670,12 +714,12 @@ header div #header-holder img {
 @media (min-width: 768px) {
   header div #header-holder section h1 {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 1024px) {
   header div #header-holder section h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -1229,6 +1273,11 @@ footer > div #follow div ul li {
 @media (min-width: 768px) {
   #search {
     margin-top: 145px;
+  }
+}
+@media (min-width: 1024px) {
+  #search {
+    margin-top: 190px;
   }
 }
 #search > div > section {
