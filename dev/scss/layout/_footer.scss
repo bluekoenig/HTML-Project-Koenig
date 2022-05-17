@@ -57,18 +57,25 @@ footer {
                             margin-right: 24px;
                             align-items: center;
                         }
-
-                        a:link, a:vistied{
-                            color:  var(white)
-
-                            // a:hover, a:active{
-
-                            // }
+                        a:link,
+                        a:visited {
+                            text-decoration: none;
+                            transition: .5s;
+                            color: var(--white);
+                            padding: 10px;
+                            display: inline-block;
+                            font-size: rem-calc(18);
+    
+                            &:hover,
+                            &:active {
+                                color: var(--dark-dark-blue)
+                            }
+                        }
                         }
                     }
                 }
             }
-        }
+        
 
         #newsletter {
             @include md {

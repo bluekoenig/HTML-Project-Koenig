@@ -27,9 +27,18 @@ left: 0;
 
         
         #leaf-logo {
+            display: flex;
+        justify-content: flex-end;
+        align-items: center;
             width: 72px;
             padding: 24px 24px 24px 24px;
+
+            button{
+                background-color: transparent;
+                border: none;
+            }
         }
+
 
 
         #header-holder {

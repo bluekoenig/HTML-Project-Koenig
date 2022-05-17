@@ -369,6 +369,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.show-menu {
+  display: block !important;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -576,6 +580,7 @@ textarea {
 }
 
 nav section {
+  display: none;
   background-color: var(--dark-dark-teal);
   height: 100vh;
   padding: 16px;
@@ -645,8 +650,15 @@ header {
   }
 }
 header div #leaf-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 72px;
   padding: 24px 24px 24px 24px;
+}
+header div #leaf-logo button {
+  background-color: transparent;
+  border: none;
 }
 header div #header-holder {
   display: flex;
@@ -714,8 +726,19 @@ footer > div #contact ul li section img {
   margin-right: 24px;
   align-items: center;
 }
-footer > div #contact ul li section a:link, footer > div #contact ul li section a:vistied {
-  color: var(white);
+footer > div #contact ul li section a:link,
+footer > div #contact ul li section a:visited {
+  text-decoration: none;
+  transition: 0.5s;
+  color: var(--white);
+  padding: 10px;
+  display: inline-block;
+  font-size: 1.125rem;
+}
+footer > div #contact ul li section a:link:hover, footer > div #contact ul li section a:link:active,
+footer > div #contact ul li section a:visited:hover,
+footer > div #contact ul li section a:visited:active {
+  color: var(--dark-dark-blue);
 }
 @media (min-width: 768px) {
   footer > div #newsletter {
