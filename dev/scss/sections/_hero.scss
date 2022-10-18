@@ -2,7 +2,7 @@
     width: 100vw;
     height: 50vh;
     background-image: url('../img/hero image/new-hero-image.jpg');
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
 
     @include lg {
