@@ -38,8 +38,9 @@ x: -875,
 
 scrollTrigger: {
     trigger: ".moveme",
-    start: "-900",
-    end: "0",
+    markers: true,
+    start: "-1120%",
+    end: "-900%",
     scrub: true,
     pin: false
 }
@@ -48,21 +49,22 @@ return tl;
 }
 
 function sideBars2(){
-var tl = gsap.timeline();
-tl.to(".moveme2", {
-    duration: 1,
-x: 500, 
-
-scrollTrigger: {
-    trigger: ".moveme",
-    start: "900",
-    end: "0",
-    scrub: true,
-    pin: true
-}
-});
-return tl;
-}
+    var tl = gsap.timeline();
+    tl.from(".moveme2", {
+        duration: 2,
+    x: 875, 
+    
+    scrollTrigger: {
+        trigger: ".moveme2",
+        markers: true,
+        start: "-1120%",
+        end: "-900%",
+        scrub: true,
+        pin: false
+    }
+    });
+    return tl;
+    }
 
 
 var mainTL = gsap.timeline();
