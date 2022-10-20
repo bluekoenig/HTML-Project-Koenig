@@ -59,6 +59,14 @@ function caaaards(){
     return tl;
 }
 
+function leb(){
+    var tl = gsap.timeline();
+    tl.from("leaf-logo", {duration:.5, rotate: 360});
+    return tl;
+}
+
+
+
 
 
 // 
@@ -142,7 +150,8 @@ function caaaards(){
 var mainTL = gsap.timeline();
 mainTL.add(movemes())
 .add(fadeyGuys())
-.add(caaaards());
+.add(caaaards())
+.add(leb());
 // mainTL.add(sideBars(), sideBars2())
 // .add(fadeBox(), fadeBox2());
 
