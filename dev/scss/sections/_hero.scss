@@ -2,8 +2,8 @@
     width: 100vw;
     height: 50vh;
     background-image: url('../img/hero image/new-hero-image.jpg');
-    background-size: 100%;
-    background-position: center center;
+    background-size: cover;
+    background-position: center right;
 
     @include lg {
         height: 70vh;
@@ -125,7 +125,8 @@ cursor: pointer;
 
 }
 
-.best-friends-container {
+#best-friends-container {
+    overflow: hidden;
 
     @include xxl {
 

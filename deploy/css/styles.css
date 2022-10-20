@@ -978,8 +978,8 @@ footer > div #follow div ul li {
   width: 100vw;
   height: 50vh;
   background-image: url("../img/hero image/new-hero-image.jpg");
-  background-size: 100%;
-  background-position: center center;
+  background-size: cover;
+  background-position: center right;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -1072,58 +1072,61 @@ footer > div #follow div ul li {
   margin-left: auto;
 }
 
+#best-friends-container {
+  overflow: hidden;
+}
 @media (min-width: 1440px) {
-  .best-friends-container .under-left {
+  #best-friends-container .under-left {
     display: grid;
     grid-template-columns: 16px 485px auto;
     grid-template-areas: ". bfc .";
   }
-  .best-friends-container .under-right {
+  #best-friends-container .under-right {
     display: grid;
     grid-template-columns: auto 485px 16px;
     grid-template-areas: ". bfc .";
   }
 }
-.best-friends-container .flex-arrows {
+#best-friends-container .flex-arrows {
   display: flex;
   padding: 16px 16px 16px 16px;
 }
-.best-friends-container .flex-arrows aside {
+#best-friends-container .flex-arrows aside {
   margin-left: auto;
   align-content: center;
 }
 @media (min-width: 576px) {
-  .best-friends-container div {
+  #best-friends-container div {
     grid-template-areas: "quote button";
   }
 }
 @media (min-width: 768px) {
-  .best-friends-container div {
+  #best-friends-container div {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1440px) {
-  .best-friends-container div {
+  #best-friends-container div {
     grid-area: bfc;
   }
 }
-.best-friends-container div .best-friends-content {
+#best-friends-container div .best-friends-content {
   padding: 16px;
 }
-.best-friends-container div .best-friends-content button {
+#best-friends-container div .best-friends-content button {
   display: inline-block;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  .best-friends-container div .best-friends-content button {
+  #best-friends-container div .best-friends-content button {
     display: inline-block;
   }
 }
-.best-friends-container .quote {
+#best-friends-container .quote {
   grid-area: quote;
 }
-.best-friends-container .button {
+#best-friends-container .button {
   grid-area: button;
 }
 
